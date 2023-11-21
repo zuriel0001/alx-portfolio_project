@@ -38,9 +38,125 @@
             justify-content: center;
             align-items: center;
         }
+        /* Add some animation to the images */
+        img:hover {
+            transform: scale(1.2);
+            transition: 0.3s;
+        }
+        /* Add some gradient to the background */
+        body {
+            background: linear-gradient(to right, lightblue, lightgreen);
+        }
+        /* Add some shadow to the button */
+        a {
+            box-shadow: 5px 5px 10px gray;
+        }
+        /* Add some 3D effect to the links */
+        a {
+            /* Add some backface visibility to the links */
+            backface-visibility: hidden;
+            /* Add some rotation to the links */
+            transform: rotateY(20deg);
+            /* Add some transition to the links */
+            transition: 0.5s;
+        }
+        /* Add some hover effect to the links */
+        a:hover {
+            /* Change the background color of the links */
+            background-color: orange;
+            /* Change the rotation of the links */
+            transform: rotateY(-20deg);
+        }
+        /* Change the background color of the start game link */
+        a:first-child {
+            background-color: blue;
+        }
+        /* Add some style for the signup and login buttons */
+        .nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 10px;
+        }
+        .nav a {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            margin: 5px;
+            padding: 5px;
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+        /* Add some style for the signup and login forms */
+        .form {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 300px;
+            background-color: white;
+            border: 1px solid black;
+            box-shadow: 5px 5px 10px gray;
+            z-index: 10;
+        }
+        .form h2 {
+            text-align: center;
+            margin: 10px;
+        }
+        .form label {
+            display: block;
+            margin: 10px;
+        }
+        .form input {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        .form button {
+            display: block;
+            width: 50%;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+        .form span {
+            display: block;
+            text-align: center;
+            margin: 10px;
+        }
+        .form span a {
+            color: blue;
+            text-decoration: none;
+        }
+        /* Add some style for the close button */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            color: white;
+            text-align: center;
+            line-height: 20px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
+    <div class="nav">
+        <!-- Add the signup and login buttons -->
+        <a href="#" id="signup-btn">Sign Up</a>
+        <a href="#" id="login-btn">Log In</a>
+    </div>
     <h1>Rock Paper Scissors Game</h1>
     <p>Welcome to the rock paper scissors game! This is a classic game that can be played by two or more players, where each player chooses one of the three options: rock, paper, or scissors. The rules are simple: rock beats scissors, paper beats rock, and scissors beat paper.</p>
     <p>Are you ready to play? Click the button below to start the game.</p>
@@ -51,5 +167,68 @@
         <a href="paper.html"><img src="paper.jpg" alt="Paper"></a>
         <a href="scissors.html"><img src="scissors.jpg" alt="Scissors"></a>
     </div>
+    <!-- Add the signup form -->
+    <div class="form" id="signup-form">
+        <span class="close" onclick="closeForm('signup-form')">x</span>
+        <h2>Sign Up</h2>
+        <form action="action_page.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <label for="confirm">Confirm Password</label>
+            <input type="password" id="confirm" name="confirm" placeholder="Confirm your password" required>
+            <button type="submit">Sign Up</button>
+            <span>Already have an account? <a href="#" onclick="showForm('login-form')">Log In</a></span>
+        </form>
+    </div>
+    <!-- Add the login form -->
+    <div class="form" id="login-form">
+        <span class="close" onclick="closeForm('login-form')">x</span>
+        <h2>Log In</h2>
+        <form action="action_page.php" method="post">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <button type="submit">Log In</button>
+            <span>Don't have an account? <a href="#" onclick="showForm('signup-form')">Sign Up</a></span>
+        </form>
+    </div>
+    <!-- Add some JavaScript to show and hide the forms -->
+    <script>
+        // Get the signup and login buttons
+        var signupBtn = document.getElementById("signup-btn");
+        var loginBtn = document.getElementById("login-btn");
+        // Get the signup and login forms
+        var signupForm = document.getElementById("signup-form");
+        var loginForm = document.getElementById("login-form");
+        // Add a click event listener to the signup button
+        signupBtn.addEventListener("click", function() {
+            // Show the signup form
+            showForm("signup-form");
+        });
+        // Add a click event listener to the login button
+        loginBtn.addEventListener("click", function() {
+            // Show the login form
+            showForm("login-form");
+        });
+        // Define a function to show a form
+        function showForm(formId) {
+            // Get the form element by its id
+            var form = document.getElementById(formId);
+            // Set the display style of the form to block
+            form.style.display = "block";
+        }
+        // Define a function to close a form
+        function closeForm(formId) {
+            // Get the form element by its id
+            var form = document.getElementById(formId);
+            // Set the display style of the form to none
+            form.style.display = "none";
+        }
+    </script>
 </body>
 </html>
