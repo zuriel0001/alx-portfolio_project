@@ -3,15 +3,23 @@
     <style>
         /* Add some style to the web page */
         body {
-            font-family: Arial, sans-serif;
+            font-family: Verdana, sans-serif;
             background-color: lightblue;
         }
 
         h1 {
             text-align: center;
             color: white;
-            font-size: 48px;
+            font-size: 55px;
             font-weight: bold;
+            font-family: MedievalSharp, Georgia, serif;
+            //mix-blend-mode: darken;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            color: white;
         }
 
         .container {
@@ -52,7 +60,7 @@
             display: inline-block;
             width: 300px;
             height: 300px;
-            background-image: url;
+            background-image: url(style/images/rock.png);
             background-size: cover;
             background-repeat: no-repeat;
             margin: 50px;
@@ -62,7 +70,7 @@
             display: inline-block;
             width: 300px;
             height: 300px;
-            background-image: url;
+            background-image: url(style/images/paper.png);
             background-size: cover;
             background-repeat: no-repeat;
             margin: 50px;
@@ -72,7 +80,7 @@
             display: inline-block;
             width: 300px;
             height: 300px;
-            background-image: url;
+            background-image: url(style/images/scissors.png);
             background-size: cover;
             background-repeat: no-repeat;
             margin: 50px;
@@ -81,7 +89,7 @@
         .result {
             text-align: center;
             font-size: 32px;
-            color: #333333;
+            color: white;
             margin-top: 50px;
         }
 
@@ -117,6 +125,11 @@
         /* Change the background color of the play with human button */
         .button:last-child {
             background-color: purple;
+        }
+
+        /* Change the background color of the back to home button */
+        .button:nth-child(3) {
+            background-color: red;
         }
 
         /* Hide the game pages by default */
@@ -169,7 +182,7 @@
     <div id="human" class="container">
         <h1>PLAY WITH HUMAN</h1>
         <p>You are playing with another human. You need to share this link with your opponent and both load it on your respective devices. Click on the image of your choice and wait for your opponent to do the same. Then see the result.</p>
-        <p>The link to share is: <a href="^7^">^7^</a></p>
+        <p>The link to share is: <a href="^7^">^the_link^</a></p>
         <div class="rock"></div>
         <div class="paper"></div>
         <div class="scissors"></div>
