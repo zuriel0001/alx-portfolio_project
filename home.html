@@ -1,234 +1,182 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Rock Paper Scissors Game</title>
     <style>
         /* Add some style to the web page */
         body {
             font-family: Arial, sans-serif;
             background-color: lightblue;
         }
+
         h1 {
             text-align: center;
             color: white;
+            font-size: 48px;
+            font-weight: bold;
         }
-        p {
-            text-align: center;
-            font-size: 20px;
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
         }
-        a {
-            display: block;
-            width: 200px;
-            height: 50px;
-            margin: 10px auto;
-            padding: 10px;
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
             text-align: center;
             text-decoration: none;
+            outline: none;
             color: white;
             background-color: green;
-            border-radius: 10px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            margin: 20px;
         }
-        img {
-            width: 100px;
-            height: 100px;
-            margin: 10px;
+
+        .button:hover {background-color: #3e8e41}
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
         }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
+        .home {
+            height: 100vh;
+            background: linear-gradient(to right, lightblue, lightgreen);
         }
+
+        .rock {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-image: url;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 50px;
+        }
+
+        .paper {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-image: url;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 50px;
+        }
+
+        .scissors {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-image: url;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 50px;
+        }
+
+        .result {
+            text-align: center;
+            font-size: 32px;
+            color: #333333;
+            margin-top: 50px;
+        }
+
         /* Add some animation to the images */
-        img:hover {
+        .rock:hover, .paper:hover, .scissors:hover {
             transform: scale(1.2);
             transition: 0.3s;
         }
-        /* Add some gradient to the background */
-        body {
-            background: linear-gradient(to right, lightblue, lightgreen);
-        }
-        /* Add some shadow to the button */
-        a {
-            box-shadow: 5px 5px 10px gray;
-        }
-        /* Add some 3D effect to the links */
-        a {
-            /* Add some backface visibility to the links */
+
+        /* Add some 3D effect to the buttons */
+        .button {
+            /* Add some backface visibility to the buttons */
             backface-visibility: hidden;
-            /* Add some rotation to the links */
+            /* Add some rotation to the buttons */
             transform: rotateY(20deg);
-            /* Add some transition to the links */
+            /* Add some transition to the buttons */
             transition: 0.5s;
         }
-        /* Add some hover effect to the links */
-        a:hover {
-            /* Change the background color of the links */
+
+        /* Add some hover effect to the buttons */
+        .button:hover {
+            /* Change the background color of the buttons */
             background-color: orange;
-            /* Change the rotation of the links */
+            /* Change the rotation of the buttons */
             transform: rotateY(-20deg);
         }
-        /* Change the background color of the start game link */
-        a:first-child {
+
+        /* Change the background color of the play with computer button */
+        .button:first-child {
             background-color: blue;
         }
-        /* Add some style for the signup and login buttons */
-        .nav {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            margin: 10px;
+
+        /* Change the background color of the play with human button */
+        .button:last-child {
+            background-color: purple;
         }
-        .nav a {
-            display: inline-block;
-            width: auto;
-            height: auto;
-            margin: 5px;
-            padding: 5px;
-            background-color: white;
-            color: black;
-            border: 1px solid black;
-        }
-        /* Add some style for the signup and login forms */
-        .form {
+
+        /* Hide the game pages by default */
+        #computer, #human {
             display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 400px;
-            height: 300px;
-            background-color: white;
-            border: 1px solid black;
-            box-shadow: 5px 5px 10px gray;
-            z-index: 10;
-        }
-        .form h2 {
-            text-align: center;
-            margin: 10px;
-        }
-        .form label {
-            display: block;
-            margin: 10px;
-        }
-        .form input {
-            display: block;
-            width: 80%;
-            margin: 10px auto;
-            padding: 5px;
-            border: 1px solid black;
-        }
-        .form button {
-            display: block;
-            width: 50%;
-            margin: 10px auto;
-            padding: 10px;
-            background-color: green;
-            color: white;
-            border: none;
-            border-radius: 10px;
-        }
-        .form span {
-            display: block;
-            text-align: center;
-            margin: 10px;
-        }
-        .form span a {
-            color: blue;
-            text-decoration: none;
-        }
-        /* Add some style for the close button */
-        .close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 20px;
-            height: 20px;
-            background-color: red;
-            color: white;
-            text-align: center;
-            line-height: 20px;
-            cursor: pointer;
         }
     </style>
-</head>
-<body>
-    <div class="nav">
-        <!-- Add the signup and login buttons -->
-        <a href="#" id="signup-btn">Sign Up</a>
-        <a href="#" id="login-btn">Log In</a>
-    </div>
-    <h1>Rock Paper Scissors Game</h1>
-    <p>Welcome to the rock paper scissors game! This is a classic game that can be played by two or more players, where each player chooses one of the three options: rock, paper, or scissors. The rules are simple: rock beats scissors, paper beats rock, and scissors beat paper.</p>
-    <p>Are you ready to play? Click the button below to start the game.</p>
-    <a href="game.html">Start Game</a>
-    <p>Or you can choose one of the images below to play with the computer.</p>
-    <div class="container">
-        <a href="rock.html"><img src="rock.jpg" alt="Rock"></a>
-        <a href="paper.html"><img src="paper.jpg" alt="Paper"></a>
-        <a href="scissors.html"><img src="scissors.jpg" alt="Scissors"></a>
-    </div>
-    <!-- Add the signup form -->
-    <div class="form" id="signup-form">
-        <span class="close" onclick="closeForm('signup-form')">x</span>
-        <h2>Sign Up</h2>
-        <form action="action_page.php" method="post">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            <label for="confirm">Confirm Password</label>
-            <input type="password" id="confirm" name="confirm" placeholder="Confirm your password" required>
-            <button type="submit">Sign Up</button>
-            <span>Already have an account? <a href="#" onclick="showForm('login-form')">Log In</a></span>
-        </form>
-    </div>
-    <!-- Add the login form -->
-    <div class="form" id="login-form">
-        <span class="close" onclick="closeForm('login-form')">x</span>
-        <h2>Log In</h2>
-        <form action="action_page.php" method="post">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            <button type="submit">Log In</button>
-            <span>Don't have an account? <a href="#" onclick="showForm('signup-form')">Sign Up</a></span>
-        </form>
-    </div>
-    <!-- Add some JavaScript to show and hide the forms -->
     <script>
-        // Get the signup and login buttons
-        var signupBtn = document.getElementById("signup-btn");
-        var loginBtn = document.getElementById("login-btn");
-        // Get the signup and login forms
-        var signupForm = document.getElementById("signup-form");
-        var loginForm = document.getElementById("login-form");
-        // Add a click event listener to the signup button
-        signupBtn.addEventListener("click", function() {
-            // Show the signup form
-            showForm("signup-form");
-        });
-        // Add a click event listener to the login button
-        loginBtn.addEventListener("click", function() {
-            // Show the login form
-            showForm("login-form");
-        });
-        // Define a function to show a form
-        function showForm(formId) {
-            // Get the form element by its id
-            var form = document.getElementById(formId);
-            // Set the display style of the form to block
-            form.style.display = "block";
+        // Add some JavaScript code to handle the user's choice
+        function playWithComputer() {
+            // Hide the home page and show the computer game page
+            document.getElementById("home").style.display = "none";
+            document.getElementById("computer").style.display = "block";
         }
-        // Define a function to close a form
-        function closeForm(formId) {
-            // Get the form element by its id
-            var form = document.getElementById(formId);
-            // Set the display style of the form to none
-            form.style.display = "none";
+
+        function playWithHuman() {
+            // Hide the home page and show the human game page
+            document.getElementById("home").style.display = "none";
+            document.getElementById("human").style.display = "block";
+        }
+
+        function goBack() {
+            // Hide the game pages and show the home page
+            document.getElementById("computer").style.display = "none";
+            document.getElementById("human").style.display = "none";
+            document.getElementById("home").style.display = "block";
         }
     </script>
+</head>
+<body>
+    <div id="home" class="home">
+        <div class="container">
+            <h1>ROCK PAPER SCISSORS</h1>
+            <p>The rules are simple: Rock beats Scissors, Scissors beats Paper, and Paper beats Rock. You can choose to play with the computer or with another human. Click on the button below to start the game.</p>
+            <button class="button" onclick="playWithComputer()">PLAY WITH COMPUTER</button>
+            <button class="button" onclick="playWithHuman()">PLAY WITH HUMAN</button>
+        </div>
+    </div>
+    <div id="computer" class="container">
+        <h1>PLAY WITH COMPUTER</h1>
+        <p>You are playing with the computer. Click on the image of your choice and see the result.</p>
+        <div class="rock"></div>
+        <div class="paper"></div>
+        <div class="scissors"></div>
+        <div class="result">
+            <!-- Display the result of the game here -->
+        </div>
+        <button class="button" onclick="goBack()">BACK TO HOME</button>
+    </div>
+    <div id="human" class="container">
+        <h1>PLAY WITH HUMAN</h1>
+        <p>You are playing with another human. You need to share this link with your opponent and both load it on your respective devices. Click on the image of your choice and wait for your opponent to do the same. Then see the result.</p>
+        <p>The link to share is: <a href="^7^">^7^</a></p>
+        <div class="rock"></div>
+        <div class="paper"></div>
+        <div class="scissors"></div>
+        <div class="result">
+            <!-- Display the result of the game here -->
+        </div>
+        <button class="button" onclick="goBack()">BACK TO HOME</button>
+    </div>
 </body>
 </html>
