@@ -8,18 +8,39 @@
 </head>
 <body>
     <header>
-        <h1>Rock Paper Scissors Game</h1>
-        <p>A simple and fun game to play with your friends or the computer.</p>
+        <!-- A logo image for the game -->
+        <img src="images/logo.png" alt="Rock Paper Scissors Game Logo" id="logo">
+        <!-- A game full name and slogan for the game -->
+        <div id="title">
+            <h1>Rock Paper Scissors Game</h1>
+            <p>The ultimate showdown of hand gestures.</p>
+        </div>
     </header>
     <main>
-        <div class="buttons">
-            <button id="play-computer" onclick="window.location.href='computer.html'">PLAY WITH COMPUTER</button>
-            <button id="play-human" onclick="window.location.href='human.html'">PLAY WITH HUMAN</button>
-        </div>
+        <!-- A section for the game rules -->
+        <section id="rules">
+            <h2>What are the Rules of Rock Paper Scissors?</h2>
+            <p>The game’s rules are straightforward. Players deliver hand signals representing rock, paper, or scissors, with the outcome determined by these three rules:</p>
+            <ul>
+                <li>Rock wins against scissors.</li>
+                <li>Scissors win against paper.</li>
+                <li>Paper wins against rock.</li>
+            </ul>
+            <p>If both players make the same gesture, it is a tie, and the game is played again. The game is typically played in a best-of-three or best-of-five format.</p>
+        </section>
+        <!-- A section for the game buttons -->
+        <section id="buttons">
+            <h2>Are You Ready to Play?</h2>
+            <p>Choose your opponent and start the game. Have fun and good luck!</p>
+            <div class="buttons">
+                <button id="play-computer" onclick="window.location.href='computer.html'">PLAY WITH COMPUTER</button>
+                <button id="play-human" onclick="window.location.href='human.html'">PLAY WITH HUMAN</button>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>Created by portfolio_project</p>
-        <p>Powered by Bing</p>
+        <p>Created by zuriel&chigozirim </p>
+        <p>Powered by alx</p>
     </footer>
     <script src="script.js"></script>
 </body>
