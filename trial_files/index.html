@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header>
+        <!-- A logo image for the game -->
+        <img src="../static/img/logo.png" alt="Rock Paper Scissors Game Logo" id="logo">
+        <!-- A game full name and slogan for the game -->
+        <hgroup id="title">
+            <h1>Rock Paper Scissors Game</h1>
+            <h2>The ultimate showdown of hand gestures.</h2>
+        </hgroup>
+    </header>
+    <main>
+        <!-- A section for the game rules -->
+        <section id="rules">
+            <h3>What are the Rules of Rock Paper Scissors?</h3>
+            <p>The game has three (3) simple and straightforward rules :</p>
+            <ul>
+                <li>Rock wins against scissors.</li>
+                <li>Scissors win against paper.</li>
+                <li>Paper wins against rock.</li>
+            </ul>
+            <p>If both players make the same gesture, it is a tie, and the game is played again. The game is typically played in a best-of-three or best-of-five format.</p>
+        </section>
+        <!-- A section for the game buttons -->
+        <section id="buttons">
+            <h3>Are You Ready to Play?</h3>
+            <p>Choose your opponent and start the game. Have fun and good luck!</p>
+            <div class="buttons">
+                <!-- A button to play with the computer -->
+                <button id="play-computer" onclick="window.location.href='computer.html'">PLAY WITH COMPUTER</button>
+                <!-- A button to play with another human -->
+                <button id="play-human" onclick="window.location.href='human.html'">PLAY WITH HUMAN</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created by zuriel&chigozirim </p>
+        <p>Powered by alx</p>
+    </footer>
+    <!-- Link to the external JS file -->
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
