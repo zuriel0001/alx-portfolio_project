@@ -33,7 +33,7 @@ header #title {
 header h1 {
     font-size: 48px;
     /* A different font type for the game title from Google Fonts */
-    font-family: 'Lobster', cursive; /* A lobster font from [2](https://bing.com/search?q=different+fonts+for+web) */
+    font-family: 'Georgia', serif;
 }
 
 header p {
