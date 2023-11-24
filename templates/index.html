@@ -7,26 +7,34 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <!-- Home Page -->
     <div id="home" class="home">
         <div class="container">
             <h1>ROCK PAPER SCISSORS</h1>
-            <p>The rules are simple: Rock beats Scissors, Scissors beats Paper, and Paper beats Rock. You can choose to play with the computer or with another human. Click on the button below to start the game.</p>
+            <p style="color: red; font-family: Arial; font-size: 30px;"> The rules are simple: </p>
+          <p>✔ Rock beats Scissors</p>
+          <p>✔ Scissors beats Paper</p>
+          <p>✔ Paper beats Rock</p>
+          <p style="color: red; font-size: 20px;">You can choose to play with the computer or with another human.</p>
+
+          <p>Choose how you want to play😊</p>
             <div class="button-container">
                 <button class="button" onclick="playWithComputer()">PLAY WITH COMPUTER</button>
                 <button class="button" onclick="playWithHuman()">PLAY WITH HUMAN</button>
             </div>
         </div>
     </div>
+
+    <!-- Computer Game Play Page -->
     <div id="computer" class="container center-button">
-        <!-- Content for computer game page -->
         <h1>PLAY WITH COMPUTER</h1>
         <p>You are playing with the computer. Click on the image of your choice and see the result.</p>
+        <div class="rounds">
+            <p>Round: <span id="roundsPlayed">0</span></p>
+        </div>
         <div class="result">
             <p>Player: <span id="playerResult">0</span></p>
             <p>Computer: <span id="computerResult">0</span></p>
-        </div>
-        <div class="rounds">
-            <p>Round: <span id="roundsPlayed">0</span></p>
         </div>
         <div class="choices">
             <img src="static/images/rock.png" alt="Rock" class="choice-image" onclick="playRound('rock')">
@@ -40,8 +48,9 @@
         </div>
         <button class="button center" onclick="goBack()">BACK TO HOME</button>
     </div>
+
+    <!-- Human Game Play Page -->
     <div id="human" class="container">
-        <!-- Content for human game page -->
         <h1>PLAY WITH HUMAN</h1>
         <p>You are playing with another human. Share the link with your opponent and both load it on your respective devices. Click on the image of your choice and wait for your opponent to do the same. Then see the result.</p>
         <div class="link-section">
@@ -55,6 +64,7 @@
         </div>
         <button class="button center" onclick="goBack()">BACK TO HOME</button>
     </div>
+
     <script src="scripts/main.js"></script>
 </body>
 </html>
