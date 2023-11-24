@@ -18,25 +18,27 @@
     <div id="computer" class="container">
         <h1>PLAY WITH COMPUTER</h1>
         <p>You are playing with the computer. Click on the image of your choice and see the result.</p>
-        <div class="rock"></div>
-        <div class="paper"></div>
-        <div class="scissors"></div>
         <div class="result">
-            <!-- Display the result of the game here -->
+            <p>Player: <span id="playerResult">0</span></p>
+            <p>Computer: <span id="computerResult">0</span></p>
+        </div>
+        <div class="rounds">
+            <p>Round: <span id="roundsPlayed">0</span></p>
+        </div>
+        <div class="choices">
+            <img src="static/images/rock.png" alt="Rock" class="choice-image" onclick="playRound('rock')">
+            <img src="static/images/paper.png" alt="Paper" class="choice-image" onclick="playRound('paper')">
+            <img src="static/images/scissors.png" alt="Scissors" class="choice-image" onclick="playRound('scissors')">
+        </div>
+        <div class="result">
+            <p>Player chose: <span id="playerChoice">-</span></p>
+            <p>Computer chose: <span id="computerChoice">-</span></p>
+            <p>Result: <span id="roundResult">-</span></p>
         </div>
         <button class="button" onclick="goBack()">BACK TO HOME</button>
     </div>
     <div id="human" class="container">
-        <h1>PLAY WITH HUMAN</h1>
-        <p>You are playing with another human. You need to share this link with your opponent and both load it on your respective devices. Click on the image of your choice and wait for your opponent to do the same. Then see the result.</p>
-        <p>The link to share is: <a href="^7^">^the_link^</a></p>
-        <div class="rock"></div>
-        <div class="paper"></div>
-        <div class="scissors"></div>
-        <div class="result">
-            <!-- Display the result of the game here -->
-        </div>
-        <button class="button" onclick="goBack()">BACK TO HOME</button>
+        <!-- Content for human game page -->
     </div>
     <script src="scripts/main.js"></script>
 </body>
