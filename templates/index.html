@@ -16,6 +16,7 @@
         </div>
     </div>
     <div id="computer" class="container">
+        <!-- Content for computer game page -->
         <h1>PLAY WITH COMPUTER</h1>
         <p>You are playing with the computer. Click on the image of your choice and see the result.</p>
         <div class="result">
@@ -35,10 +36,27 @@
             <p>Computer chose: <span id="computerChoice">-</span></p>
             <p>Result: <span id="roundResult">-</span></p>
         </div>
-        <button class="button" onclick="goBack()">BACK TO HOME</button>
+        <button class="button center" onclick="goBack()">BACK TO HOME</button>
     </div>
     <div id="human" class="container">
         <!-- Content for human game page -->
+        <h1>PLAY WITH HUMAN</h1>
+        <p>You are playing with another human. Share the link with your opponent and both load it on your respective devices. Click on the image of your choice and wait for your opponent to do the same. Then see the result.</p>
+        <div class="link-section">
+            <p>The link to share is: <span id="gameLink">^the_link^</span></p>
+            <button class="button" onclick="copyLink()">COPY LINK</button>
+        </div>
+        <div class="choices">
+            <img src="static/images/rock.png" alt="Rock" class="choice-image" onclick="playRound('rock')">
+            <img src="static/images/paper.png" alt="Paper" class="choice-image" onclick="playRound('paper')">
+            <img src="static/images/scissors.png" alt="Scissors" class="choice-image" onclick="playRound('scissors')">
+        </div>
+        <div class="result">
+            <p>Player chose: <span id="playerChoice">-</span></p>
+            <p>Opponent chose: <span id="opponentChoice">-</span></p>
+            <p>Result: <span id="roundResult">-</span></p>
+        </div>
+        <button class="button center" onclick="goBack()">BACK TO HOME</button>
     </div>
     <script src="scripts/main.js"></script>
 </body>
