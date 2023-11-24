@@ -22,8 +22,10 @@ p {
     margin: 0 auto;
 }
 
+/* Add margin-top to bring down the buttons a bit */
 .button {
     display: inline-block;
+    margin: 30px 10px; /* Adjust as needed */
     padding: 15px 25px;
     font-size: 24px;
     cursor: pointer;
@@ -35,7 +37,6 @@ p {
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-    margin: 20px;
 }
 
 .button:hover {
@@ -53,7 +54,59 @@ p {
     background: linear-gradient(to right, lightblue, lightgreen);
 }
 
-.rock, .paper, .scissors {
+/* center the buttons horizontally */
+.button-container {
+    text-align: center;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.result {
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    margin-top: 20px;
+}
+
+.link-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#computer, #human {
+    display: none;
+}
+
+#computer .button,
+#human .button {
+    background-color: #ff5733;
+}
+
+#computer .button:hover,
+#human .button:hover {
+    background-color: #cc471f;
+}
+
+#computer .button:active,
+#human .button:active {
+    background-color: #992f15;
+}
+
+#human .button:hover {
+    background-color: #cc471f;
+}
+
+#human .button:active {
+    background-color: #992f15;
+}
+
+.rock,
+.paper,
+.scissors {
     display: inline-block;
     width: 300px;
     height: 300px;
@@ -72,13 +125,6 @@ p {
 
 .scissors {
     background-image: url(static/images/scissors.png);
-}
-
-.result {
-    text-align: center;
-    font-size: 32px;
-    color: white;
-    margin-top: 50px;
 }
 
 .rock:hover,
@@ -109,9 +155,4 @@ p {
 
 .button:nth-child(3) {
     background-color: red;
-}
-
-#computer,
-#human {
-    display: none;
 }
