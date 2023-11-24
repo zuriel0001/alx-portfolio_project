@@ -11,8 +11,10 @@
         <div class="container">
             <h1>ROCK PAPER SCISSORS</h1>
             <p>The rules are simple: Rock beats Scissors, Scissors beats Paper, and Paper beats Rock. You can choose to play with the computer or with another human. Click on the button below to start the game.</p>
-            <button class="button" onclick="playWithComputer()">PLAY WITH COMPUTER</button>
-            <button class="button" onclick="playWithHuman()">PLAY WITH HUMAN</button>
+            <div class="button-container">
+                <button class="button" onclick="playWithComputer()">PLAY WITH COMPUTER</button>
+                <button class="button" onclick="playWithHuman()">PLAY WITH HUMAN</button>
+            </div>
         </div>
     </div>
     <div id="computer" class="container">
@@ -45,11 +47,6 @@
         <div class="link-section">
             <p>The link to share is: <span id="gameLink">^the_link^</span></p>
             <button class="button" onclick="copyLink()">COPY LINK</button>
-        </div>
-        <div class="choices">
-            <img src="static/images/rock.png" alt="Rock" class="choice-image" onclick="playRound('rock')">
-            <img src="static/images/paper.png" alt="Paper" class="choice-image" onclick="playRound('paper')">
-            <img src="static/images/scissors.png" alt="Scissors" class="choice-image" onclick="playRound('scissors')">
         </div>
         <div class="result">
             <p>Player chose: <span id="playerChoice">-</span></p>
