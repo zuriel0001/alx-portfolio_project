@@ -23,7 +23,7 @@ function playComputerGame() {
         document.getElementById("computerChoice").textContent = computerChoice;
 
         // Determine the winner of the round
-        const roundResult = determineWinner(playerChoice, computerChoice, "");
+        const roundResult = determineWinner(playerChoice, computerChoice);
 
         // Update the round result displayed on the page
         document.getElementById("roundResult").textContent = roundResult;
@@ -49,7 +49,7 @@ function playComputerGame() {
     }
 
     // Function to determine the winner of a round
-    function determineWinner(playerChoice, computerChoice, opponentChoice) {
+    function determineWinner(playerChoice, computerChoice) {
         const rules = {
             "rock": "scissors",
             "paper": "rock",
@@ -57,12 +57,20 @@ function playComputerGame() {
         };
 
         if (playerChoice === computerChoice) {
+            // It's a tie
             return "It's a tie!";
         } else if (rules[playerChoice] === computerChoice) {
-            return `You win! ${playerChoice.capitalize()} beats ${computerChoice}.`;
+            // Player wins
+            return `You win! ${capitalize(playerChoice)} beats ${computerChoice}.`;
         } else {
-            return `Computer wins! ${computerChoice.capitalize()} beats ${playerChoice}.`;
+            // Computer wins
+            return `Computer wins! ${capitalize(computerChoice)} beats ${playerChoice}.`;
         }
+    }
+
+    // Function to capitalize the first letter of a string
+    function capitalize(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
     }
 
     // Function to update scores based on the round result
