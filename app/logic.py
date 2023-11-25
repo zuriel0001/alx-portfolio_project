@@ -65,7 +65,11 @@ def play_with_computer():
             # Display the current scores after each round
             print(f"\nCurrent scores:\nYou: {player_score}\nComputer: {computer_score}\n")
 
-        # Print the final result
+        # Print the final result after 5 rounds
+        print("\nFinal scores:")
+        print(f"You: {player_score}\nComputer: {computer_score}\n")
+
+        # Determine the overall winner
         if player_score == computer_score:
             print("It's a draw!")
         elif player_score > computer_score:
@@ -137,7 +141,11 @@ def play_with_human():
             # Display the current scores after each round
             print(f"\nCurrent scores:\nPlayer 1: {player1_score}\nPlayer 2: {player2_score}\n")
 
-        # Print the final result
+        # Print the final result after 5 rounds
+        print("\nFinal scores:")
+        print(f"Player 1: {player1_score}\nPlayer 2: {player2_score}\n")
+
+        # Determine the overall winner
         if player1_score == player2_score:
             print("It's a draw!")
         elif player1_score > player2_score:
