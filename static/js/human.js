@@ -1,5 +1,4 @@
 // JavaScript code for human game mode
-
 function playWithHuman() {
     // Show the human game page
     showPage("human");
