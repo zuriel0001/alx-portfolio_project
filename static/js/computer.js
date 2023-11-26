@@ -13,8 +13,16 @@ function playWithComputer() {
 }
 
 function playComputerGame() {
+    // Variable to check if the game is over
+    let gameOver = false;
+
     // Function to handle a round of the game
     function playRound(playerChoice) {
+        // Check if the game is over
+        if (gameOver) {
+            return;
+        }
+
         // Get the computer's choice
         const computerChoice = getRandomChoice();
 
@@ -122,6 +130,9 @@ function playComputerGame() {
 
     // Function to display a popup screen with the given message
     function displayPopup(message) {
+        // Set game over to true
+        gameOver = true;
+
         // Create a modal element
         const popup = document.createElement("div");
         popup.className = "popup";
@@ -148,6 +159,9 @@ function playComputerGame() {
             document.getElementById("playerResult").textContent = "0";
             document.getElementById("computerResult").textContent = "0";
             document.getElementById("roundsPlayed").textContent = "0";
+
+            // Set game over back to false
+            gameOver = false;
 
             // Continue playing the game
             playComputerGame();
