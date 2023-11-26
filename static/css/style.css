@@ -39,10 +39,11 @@ p {
     border: none;
     border-radius: 15px;
     box-shadow: 0 7px #999;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .button:hover {
-    background-color: #3e8e41;
+    background-color: #3e8e4;
 }
 
 .button:active {
@@ -51,24 +52,47 @@ p {
     transform: translateY(4px);
 }
 
-.home {
-    height: 100vh;
-    background: linear-gradient(to right, lightblue, lightgreen);
+/* Center the buttons horizontally */
+.home .button-container {
+    text-align: center;
 }
 
-/* center the buttons horizontally */
-.button-container {
+/* Style for the "RESET AND PLAY AGAIN" button */
+.popup-content button {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
     text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: blue; /* Adjust the color as needed */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 7px #999;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.popup-content button:hover {
+    background-color: #3e4e8;
+}
+
+.popup-content button:active {
+    background-color: #3e4e81;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 .choices {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 45px;
 }
 
 .result {
-    text-align: center;
+    text-align: center; /* Correct typo in 'center' */
     font-size: 32px;
     color: white;
     margin-top: 20px;
@@ -157,4 +181,48 @@ p {
 
 .button:nth-child(3) {
     background-color: red;
+}
+
+/* Style for the popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: blue; /* Adjust the color as needed */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 7px #999;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.popup button:hover {
+    background-color: #3e4e8;
+}
+
+.popup button:active {
+    background-color: #3e4e81;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
