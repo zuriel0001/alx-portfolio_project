@@ -161,6 +161,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 50px;
+    cursor: pointer;
 }
 
 .rock {
