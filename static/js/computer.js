@@ -101,7 +101,7 @@ function playComputerGame() {
         }
     }
 
-    // Function to end the game and determine the overall winner
+    // Function to end the game and display the final result in a popup screen
     function endGame() {
         const playerScore = parseInt(document.getElementById("playerResult").textContent);
         const computerScore = parseInt(document.getElementById("computerResult").textContent);
@@ -116,8 +116,54 @@ function playComputerGame() {
             overallWinner = "Computer is the overall winner!";
         }
 
-        // Display the overall winner
-        alert(`Game Over! ${overallWinner}`);
+        // Display the final result in a popup screen
+        displayPopup(`Game Over!\n${overallWinner}\n\nDo you want to play again?`);
+    }
+
+    // Function to display a popup screen with the given message
+    function displayPopup(message) {
+        // Create a modal element
+        const popup = document.createElement("div");
+        popup.className = "popup";
+
+        // Create a popup content element
+        const popupContent = document.createElement("div");
+        popupContent.className = "popup-content";
+
+        // Create a popup message element
+        const popupMessage = document.createElement("p");
+        popupMessage.textContent = message;
+
+        // Append the message to the popup content
+        popupContent.appendChild(popupMessage);
+
+        // Create a reset button element
+        const resetButton = document.createElement("button");
+        resetButton.textContent = "Reset and Play Again";
+        resetButton.addEventListener("click", function () {
+            // Close the popup
+            popup.style.display = "none";
+
+            // Reset scores and rounds played for a new game
+            document.getElementById("playerResult").textContent = "0";
+            document.getElementById("computerResult").textContent = "0";
+            document.getElementById("roundsPlayed").textContent = "0";
+
+            // Continue playing the game
+            playComputerGame();
+        });
+
+        // Append the reset button to the popup content
+        popupContent.appendChild(resetButton);
+
+        // Append the popup content to the popup
+        popup.appendChild(popupContent);
+
+        // Append the popup to the document body
+        document.body.appendChild(popup);
+
+        // Display the popup
+        popup.style.display = "block";
     }
 
     // Expose the playRound function to be accessible from the HTML onclick event
