@@ -50,21 +50,37 @@ function playComputerGame() {
 
     // Function to determine the winner of a round
     function determineWinner(playerChoice, computerChoice) {
-        const rules = {
-            "rock": "scissors",
-            "paper": "rock",
-            "scissors": "paper"
-        };
-
-        if (playerChoice === computerChoice) {
-            // It's a tie
-            return "It's a tie!";
-        } else if (rules[playerChoice] === computerChoice) {
-            // Player wins
-            return `You win! ${capitalize(playerChoice)} beats ${computerChoice}.`;
-        } else {
-            // Computer wins
-            return `Computer wins! ${capitalize(computerChoice)} beats ${playerChoice}.`;
+        switch (playerChoice) {
+            case "rock":
+                switch (computerChoice) {
+                    case "rock":
+                        return "It's a tie!";
+                    case "paper":
+                        return "Computer wins! Paper beats rock.";
+                    case "scissors":
+                        return "You win! Rock beats scissors.";
+                }
+                break;
+            case "paper":
+                switch (computerChoice) {
+                    case "rock":
+                        return "You win! Paper beats rock.";
+                    case "paper":
+                        return "It's a tie!";
+                    case "scissors":
+                        return "Computer wins! Scissors beats paper.";
+                }
+                break;
+            case "scissors":
+                switch (computerChoice) {
+                    case "rock":
+                        return "Computer wins! Rock beats scissors.";
+                    case "paper":
+                        return "You win! Scissors beats paper.";
+                    case "scissors":
+                        return "It's a tie!";
+                }
+                break;
         }
     }
 
@@ -78,9 +94,9 @@ function playComputerGame() {
         const playerScoreElement = document.getElementById("playerResult");
         const computerScoreElement = document.getElementById("computerResult");
 
-        if (roundResult.includes("win")) {
+        if (roundResult.startsWith("You win")) {
             playerScoreElement.textContent = parseInt(playerScoreElement.textContent) + 1;
-        } else if (roundResult.includes("Computer")) {
+        } else if (roundResult.startsWith("Computer wins")) {
             computerScoreElement.textContent = parseInt(computerScoreElement.textContent) + 1;
         }
     }
