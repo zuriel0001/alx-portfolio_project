@@ -160,6 +160,13 @@ function playComputerGame() {
             document.getElementById("computerResult").textContent = "0";
             document.getElementById("roundsPlayed").textContent = "0";
 
+            // Reset player and computer choices
+            document.getElementById("playerChoice").textContent = "";
+            document.getElementById("computerChoice").textContent = "";
+
+            // Reset round result
+            document.getElementById("roundResult").textContent = "";
+
             // Set game over back to false
             gameOver = false;
 
