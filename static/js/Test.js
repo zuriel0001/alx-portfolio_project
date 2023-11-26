@@ -94,11 +94,12 @@ function playComputerGame() {
         const playerScoreElement = document.getElementById("playerResult");
         const computerScoreElement = document.getElementById("computerResult");
 
-        if (roundResult.includes("win")) {
+        if (roundResult.startsWith("You win")) {
             playerScoreElement.textContent = parseInt(playerScoreElement.textContent) + 1;
-        } else if (roundResult.includes("Computer")) {
+        } else if (roundResult.startsWith("Computer wins")) {
             computerScoreElement.textContent = parseInt(computerScoreElement.textContent) + 1;
         }
+
     }
 
     // Function to end the game and determine the overall winner
