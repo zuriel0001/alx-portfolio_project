@@ -1,6 +1,7 @@
 body {
     font-family: Slackey, sans-serif;
     background-color: lightblue;
+    margin: 0; /* Remove default margin */
 }
 
 h1 {
@@ -83,6 +84,11 @@ p {
     background-color: #3e4e81;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+.home {
+    height: 100vh;
+    background: linear-gradient(to right, lightblue, lightgreen);
 }
 
 .choices {
@@ -203,26 +209,4 @@ p {
 
 .popup button {
     margin-top: 20px;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: white;
-    background-color: blue; /* Adjust the color as needed */
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 7px #999;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.popup button:hover {
-    background-color: #3e4e8;
-}
-
-.popup button:active {
-    background-color: #3e4e81;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
 }
