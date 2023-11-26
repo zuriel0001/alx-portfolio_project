@@ -1,7 +1,7 @@
 body {
     font-family: Slackey, sans-serif;
     background-color: lightblue;
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
 h1 {
@@ -25,7 +25,6 @@ p {
     margin: 0 auto;
 }
 
-/* margin-top to bring down the buttons a bit */
 .button {
     display: inline-block;
     margin: 35px 10px;
@@ -53,12 +52,19 @@ p {
     transform: translateY(4px);
 }
 
-/* Center the buttons horizontally */
+.center-button {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin: 20px auto;
+}
+
 .home .button-container {
     text-align: center;
 }
 
-/* Style for the "RESET AND PLAY AGAIN" button */
 .popup-content button {
     display: block;
     margin: 20px auto;
@@ -69,7 +75,7 @@ p {
     text-decoration: none;
     outline: none;
     color: white;
-    background-color: blue; /* Adjust the color as needed */
+    background-color: blue;
     border: none;
     border-radius: 15px;
     box-shadow: 0 7px #999;
