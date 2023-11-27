@@ -271,10 +271,25 @@ p {
 header {
     margin: 0;
     font-size: 90px;
-    color: black;
-    
-    
+    color: #00008b;
+    /* Add a gradient background to the header */
+    background: linear-gradient(to right, #00bfff, #1e90ff, #00008b);
+    /* Add some text shadow to make it stand out */
+    text-shadow: 2px 2px 4px #000000;
+    /* Add some animation to make it more dynamic */
+    animation: bounce 1s infinite;
 }
+
+/* Define the animation keyframes */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-5%);
+    }
+    50% {
+        transform: translateY(5%);
+    }
+}
+/* ***************** */
 
 footer {
     margin-top: 30px;
