@@ -41,7 +41,7 @@ function copyToClipboard(text) {
 // Function to show a custom popup message
 function showCopiedPopup() {
     const popup = document.createElement("div");
-    popup.textContent = "Game link copied! Share it with your opponent to start the game.";
+    popup.textContent = "Game Link Copied, Share it & Let the Game Begin🤩.";
     popup.classList.add("copied-popup"); // Add a class for styling (you can define styles in your CSS)
 
     // Append the popup to the body
