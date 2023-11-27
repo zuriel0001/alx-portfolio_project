@@ -167,6 +167,14 @@ p {
     margin: 20px;
 }
 
+
+.choices .rock,
+.choices .paper,
+.choices .scissors {
+    width: 150px;
+    height: 150px;
+}
+
 .rock {
     background-image: url(static/images/rock.png);
 }
