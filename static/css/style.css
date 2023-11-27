@@ -294,7 +294,7 @@ header {
   color: var(--tertiary-color);
   background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--tertiary-color));
   text-shadow: 2px 2px 4px #000000;
-  animation: bounce 4s infinite;
+  animation: bounce 10s infinite;
   width: 100%;
   display: inline-block;
 }
