@@ -14,8 +14,8 @@ function copyLink() {
     // Copy the text to the clipboard
     copyToClipboard(`https://alx-portfolio-project-seven.vercel.app/${gameID}`);
 
-    // Alert the user that the link has been copied
-    alert("Game link copied to clipboard!");
+    // Show a custom popup indicating that the link has been copied
+    showCopiedPopup();
 }
 
 // Function to generate a unique game ID
@@ -36,4 +36,19 @@ function copyToClipboard(text) {
 
     document.execCommand("copy");
     document.body.removeChild(tempInput);
+}
+
+// Function to show a custom popup message
+function showCopiedPopup() {
+    const popup = document.createElement("div");
+    popup.textContent = "Game link copied! Share it with your opponent to start the game.";
+    popup.classList.add("copied-popup"); // Add a class for styling (you can define styles in your CSS)
+
+    // Append the popup to the body
+    document.body.appendChild(popup);
+
+    // Remove the popup after a short delay (e.g., 2 seconds)
+    setTimeout(() => {
+        document.body.removeChild(popup);
+    }, 2000);
 }
