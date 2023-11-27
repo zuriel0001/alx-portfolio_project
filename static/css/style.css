@@ -262,7 +262,7 @@ p {
 
 .header-container,
 .footer-container {
-    background-color: white;
+    /*background-color: white;*/
     text-align: center;
     color: white;
     padding: 10px;
