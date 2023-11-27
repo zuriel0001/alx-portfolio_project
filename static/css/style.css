@@ -263,6 +263,7 @@ p {
 .header-container,
 .footer-container {
     /*background-color: white;*/
+     background: linear-gradient(to right, #00bfff, #1e90ff, #00008b);
     text-align: center;
     color: white;
     padding: 10px;
