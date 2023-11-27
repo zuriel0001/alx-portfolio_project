@@ -100,7 +100,7 @@ p {
 .choices {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 45px;
 }
 
 .result {
@@ -122,7 +122,8 @@ p {
     height: 150px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 20px;
+    margin: 0 10px;
+    
 }
 
 #computer, #human {
