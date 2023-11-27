@@ -242,9 +242,9 @@ p {
 /* Style of popup when game link is copied */
 .copied-popup {
     position: fixed;
-    /*margin-top: 50px;*/
+    top: 50px;
     left: 50%;
-    transform: translateX(-90%);
+    transform: translateX(-50%, -50%);
     background-color: #4CAF50;
     color: white;
     padding: 15px;
