@@ -5,24 +5,35 @@ function playWithHuman() {
 }
 
 function copyLink() {
-    // Get the game link element
-    const gameLinkElement = document.getElementById("gameLink");
+    // Generate a unique game ID
+    const gameID = generateGameID();
 
-    // Create a temporary input element
-    const tempInput = document.createElement("input");
-    tempInput.value = gameLinkElement.textContent;
-    document.body.appendChild(tempInput);
-
-    // Select the text in the input element
-    tempInput.select();
-    tempInput.setSelectionRange(0, 99999); /* For mobile devices */
+    // Update the game link in the HTML
+    document.getElementById("gameLink").textContent = `https://alx-portfolio-project-seven.vercel.app/${gameID}`;
 
     // Copy the text to the clipboard
-    document.execCommand("copy");
-
-    // Remove the temporary input element
-    document.body.removeChild(tempInput);
+    copyToClipboard(`https://alx-portfolio-project-seven.vercel.app/${gameID}`);
 
     // Alert the user that the link has been copied
     alert("Game link copied to clipboard!");
+}
+
+// Function to generate a unique game ID
+function generateGameID() {
+    // Use the current timestamp as a unique identifier
+    const timestamp = Date.now();
+    return `game_${timestamp}`;
+}
+
+// Function to copy text to clipboard
+function copyToClipboard(text) {
+    const tempInput = document.createElement("input");
+    tempInput.value = text;
+    document.body.appendChild(tempInput);
+
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999); /* For mobile devices */
+
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
 }
