@@ -2,6 +2,7 @@ body {
     font-family: Slackey, sans-serif;
     background-color: lightblue;
     margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -255,7 +256,7 @@ p {
     z-index: 1;
 }
 
-/* Add these styles for the header and footer */
+/* styles for the header and footer */
 
 .header-container,
 .footer-container {
@@ -274,7 +275,7 @@ footer {
     margin-top: 30px;
 }
 
-/* New styles for the added content in the footer */
+/* styles for the added content in the footer */
 .footer-content {
     display: flex;
     justify-content: space-around;
