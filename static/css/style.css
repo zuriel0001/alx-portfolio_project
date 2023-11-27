@@ -263,8 +263,7 @@ p {
 .header-container,
 .footer-container {
     background-color: white;
-    /*background: linear-gradient(to right, #00bfff, #1e90ff, #00008b);*/
-    text-align: justify;
+    text-align: center; /* Changed from justify to center */
     color: white;
     padding: 10px;
 }
@@ -273,23 +272,20 @@ p {
     margin: 0;
     font-size: 90px;
     color: #00008b;
-    /* Add a gradient background to the header */
     background: linear-gradient(to right, #00bfff, #1e90ff, #00008b);
-    /* Add some text shadow to make it stand out */
     text-shadow: 2px 2px 4px #000000;
-    /* Add some animation to make it more dynamic */
     animation: bounce 1s infinite;
+
+   /* Added to make sure the title covers the whole header */
+   width: 100%;
+   display:inline-block; 
 }
 
-/* Define the animation keyframes */
 @keyframes bounce {
-    0%, 100% {
-        transform: translateY(-5%);
-    }
-    50% {
-        transform: translateY(5%);
-    }
+    0%,100% { transform: translateY(-5%); }
+     50% { transform: translateY(5%); }
 }
+
 /* ***************** */
 
 .footer {
