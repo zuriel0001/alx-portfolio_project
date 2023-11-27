@@ -263,18 +263,21 @@ p {
 .header-container,
 .footer-container {
     text-align: center;
-    background-color: #333;
     color: white;
     padding: 10px;
 }
 
 header {
     margin: 0;
-    font-size: 40px;
+    font-size: 90px;
+    color: black;
+    background-color: white;
+    
 }
 
 footer {
     margin-top: 30px;
+    background-color: #333;
 }
 
 /* styles for the added content in the footer */
