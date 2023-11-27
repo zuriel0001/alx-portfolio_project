@@ -282,13 +282,9 @@ header {
   margin: 0;
   font-size: 90px;
   color: var(--tertiary-color);
-  /* Add a gradient background to the header */
   background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--tertiary-color));
-  /* Add some text shadow to make it stand out */
   text-shadow: 2px 2px 4px #000000;
-  /* Add some animation to make it more dynamic */
-  animation: bounce 1s infinite;
-  /* Make sure the header covers the whole width */
+  animation: bounce 2s infinite;
   width: 100%;
   display: inline-block;
 }
@@ -298,12 +294,9 @@ footer {
   margin: 0;
   font-size: 20px;
   color: var(--tertiary-color);
-  /* Add a gradient background to the footer */
   background: linear-gradient(to right, var(--tertiary-color), var(--secondary-color), var(--primary-color));
-  /* Add some text shadow to make it stand out */
   text-shadow: 1px 1px 2px #ffffff;
-   width: 100%;
-  display: inline-block;
+  width: 100%;
 }
 
 /* Define the animation keyframes */
