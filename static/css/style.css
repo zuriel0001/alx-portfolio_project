@@ -270,7 +270,7 @@ p {
 /* Style the header and footer containers */
 .header-container,
 .footer-container {
-  background-color: white;
+  background-color: black;
   text-align: center;
   color: white;
   padding: 10px;
@@ -295,6 +295,7 @@ header {
 /* Style the footer element */
 footer {
   margin: 0;
+  width: 100%;
   font-size: 20px;
   color: var(--tertiary-color);
   /* Add a gradient background to the footer */
