@@ -243,8 +243,8 @@ p {
 .copied-popup {
     position: fixed;
     top: 50px;
-    left: 20%;
-    transform: translateX(-50%, -50%);
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #4CAF50;
     color: white;
     padding: 15px;
