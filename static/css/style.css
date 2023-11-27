@@ -242,10 +242,10 @@ p {
 /* Style of popup when game link is copied */
 .copied-popup {
     position: fixed;
-    top: 50px;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: black;
+    background-color: #32cd32;
     color: white;
     padding: 15px;
     border-radius: 5px;
@@ -253,4 +253,3 @@ p {
     font-size: 16px;
     z-index: 1;
 }
-
