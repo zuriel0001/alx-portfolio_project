@@ -32,3 +32,7 @@ function showPage(pageId) {
 // Expose the playRound function to be accessible from the HTML onclick event
 window.playRound = function () {};
 
+// Include the humanGame.js file
+document.write('<script type="text/javascript" src="static/js/humanGame.js"></script>');
+
+
