@@ -117,6 +117,8 @@ p {
 
 .choice-image {
     cursor: pointer;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
 }
 
 #computer, #human {
