@@ -9,6 +9,11 @@
 </head>
 
 <body>
+    <!-- Include the header -->
+    <div class="header-container">
+        <object type="text/html" data="header.html"></object>
+    </div>
+
     <!-- Home Page -->
     <div id="home" class="home">
         <div class="container">
@@ -52,27 +57,30 @@
     </div>
 
     <!-- Human Game Play Page -->
-    <!-- <div id="human" class="container center-button" onload="generateGameLink()"> -->
     <div id="human" class="container center-button">
         <h1>PLAY WITH HUMAN</h1>
         <p>You are playing with another human. Share the link with your opponent and both load it on your respective devices. Click on the image of your choice and wait for your opponent to do the same. Then see the result.</p>
         <div class="link-section">
             <p>The link to share is: <span id="gameLink">^the_link^</span></p>
             <button class="button" onclick="copyLink()">COPY LINK</button>
-        <!-- </div> -->
-        <!-- <div class="result"> -->
-           <!--  <p>Player chose: <span id="playerChoice">-</span></p> -->
-            <!-- <p>Opponent chose: <span id="opponentChoice">-</span></p> -->
-            <!-- <p>Result: <span id="roundResult">-</span></p> -->
-        <!-- </div> -->
+        </div>
+        <div class="result">
+            <p>Player chose: <span id="playerChoice">-</span></p>
+            <p>Opponent chose: <span id="opponentChoice">-</span></p>
+            <p>Result: <span id="roundResult">-</span></p>
+        </div>
         <button class="button center" onclick="goBack()">BACK TO HOME</button>
+    </div>
+
+    <!-- Include the footer -->
+    <div class="footer-container">
+        <object type="text/html" data="footer.html"></object>
     </div>
 
     <!-- Include the js files -->
     <script src="static/js/main.js"></script>
     <script src="static/js/human.js"></script>
     <script src="static/js/computer.js"></script>
-    <!-- <script src="static/js/gameLogic.js"></script> -->
     <script src="static/js/humanGame.js"></script>
 </body>
 
