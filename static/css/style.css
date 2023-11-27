@@ -94,8 +94,8 @@ p {
 
 .home {
     height: 100vh;
-    background: linear-gradient(to right, lightblue, lightgreen);
-    /*background: url('path/to/your/image.jpg') center/cover;*/
+    /*background: linear-gradient(to right, lightblue, lightgreen);*/
+    background: url('static/images/home.jfif') center/cover;
 }
 
 .choices {
