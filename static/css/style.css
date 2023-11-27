@@ -98,6 +98,7 @@ p {
     height: 100vh;
     background: linear-gradient(to right, lightblue, lightgreen);
     /* background: url('static/images/home.jfif') center/cover; */
+    overflow: hidden;
 }
 
 .choices {
