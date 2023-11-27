@@ -33,6 +33,6 @@ function showPage(pageId) {
 window.playRound = function () {};
 
 // Include the humanGame.js file
-document.write('<script type="text/javascript" src="static/js/humanGame.js"></script>');
+// document.write('<script type="text/javascript" src="static/js/humanGame.js"></script>');
 
 
