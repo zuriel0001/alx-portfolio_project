@@ -117,8 +117,12 @@ p {
 
 .choice-image {
     cursor: pointer;
-    width: 150px; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
 }
 
 #computer, #human {
