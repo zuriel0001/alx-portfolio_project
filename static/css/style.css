@@ -96,7 +96,8 @@ p {
 
 .home {
     height: 100vh;
-    background: linear-gradient(to right, lightblue, lightgreen);
+    /*background: linear-gradient(to right, lightblue, lightgreen);*/
+    background: linear-gradient(to right, rgba(255, 0, 255, 0.5), rgba(255, 165, 0, 0.5));
     /* background: url('static/images/home.jfif') center/cover; */
     overflow: hidden;
 }
