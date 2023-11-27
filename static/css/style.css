@@ -254,3 +254,52 @@ p {
     font-size: 16px;
     z-index: 1;
 }
+
+/* Add these styles for the header and footer */
+
+.header-container,
+.footer-container {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+header {
+    margin: 0;
+    font-size: 40px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+/* New styles for the added content in the footer */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-section {
+    text-align: left;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 20px;
+}
