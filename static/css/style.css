@@ -244,8 +244,8 @@ p {
     position: fixed;
     top: 50px;
     left: 50%;
-    transform: translateX(-50%, -50%);
-    background-color: #4CAF50;
+    transform: translateX(-50%);
+    background-color: black;
     color: white;
     padding: 15px;
     border-radius: 5px;
