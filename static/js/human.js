@@ -47,8 +47,8 @@ function showCopiedPopup() {
     // Append the popup to the body
     document.body.appendChild(popup);
 
-    // Remove the popup after a short delay (e.g., 2 seconds)
+    // Remove the popup after a short delay (e.g., 3 seconds)
     setTimeout(() => {
         document.body.removeChild(popup);
-    }, 2000);
+    }, 3000);
 }
