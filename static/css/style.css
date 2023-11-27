@@ -259,65 +259,56 @@ p {
 }
 
 /* styles for the header and footer */
+/* Define some variables for colors and fonts */
+:root {
+  --primary-color: #00bfff;
+  --secondary-color: #1e90ff;
+  --tertiary-color: #00008b;
+  --font-family: Arial, sans-serif;
+}
 
+/* Style the header and footer containers */
 .header-container,
 .footer-container {
-    background-color: white;
-    text-align: center; /* Changed from justify to center */
-    color: white;
-    padding: 10px;
+  background-color: white;
+  text-align: center;
+  color: white;
+  padding: 10px;
 }
 
-.header {
-    margin: 0;
-    font-size: 90px;
-    color: #00008b;
-    background: linear-gradient(to right, #00bfff, #1e90ff, #00008b);
-    text-shadow: 2px 2px 4px #000000;
-    animation: bounce 1s infinite;
-
-   /* Added to make sure the title covers the whole header */
-   width: 100%;
-   display:inline-block; 
+/* Style the header element */
+header {
+  margin: 0;
+  font-size: 90px;
+  color: var(--tertiary-color);
+  /* Add a gradient background to the header */
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--tertiary-color));
+  /* Add some text shadow to make it stand out */
+  text-shadow: 2px 2px 4px #000000;
+  /* Add some animation to make it more dynamic */
+  animation: bounce 1s infinite;
+  /* Make sure the header covers the whole width */
+  width: 100%;
+  display: inline-block;
 }
 
+/* Style the footer element */
+footer {
+  margin: 0;
+  font-size: 20px;
+  color: var(--tertiary-color);
+  /* Add a gradient background to the footer */
+  background: linear-gradient(to right, var(--tertiary-color), var(--secondary-color), var(--primary-color));
+  /* Add some text shadow to make it stand out */
+  text-shadow: 1px 1px 2px #ffffff;
+}
+
+/* Define the animation keyframes */
 @keyframes bounce {
-    0%,100% { transform: translateY(-5%); }
-     50% { transform: translateY(5%); }
-}
-
-/* ***************** */
-
-.footer {
-    margin-top: 30px;
-}
-
-/* styles for the added content in the footer */
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.social-media {
-    display: flex;
-    gap: 20px;
-}
-
-.social-link {
-    color: white;
-    text-decoration: none;
-}
-
-.contact-section {
-    text-align: left;
-}
-
-.contact-link {
-    color: white;
-    text-decoration: none;
-}
-
-.copyright {
-    margin-top: 20px;
+  0%, 100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
 }
