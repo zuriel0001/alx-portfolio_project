@@ -171,8 +171,8 @@ p {
 .paper,
 .scissors {
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 20px;
@@ -262,14 +262,14 @@ p {
 
 .header-container,
 .footer-container {
-    /*background-color: white;*/
-     background: linear-gradient(to right, #00bfff, #1e90ff, #00008b);
-    text-align: center;
+    background-color: white;
+    /*background: linear-gradient(to right, #00bfff, #1e90ff, #00008b);*/
+    text-align: justify;
     color: white;
     padding: 10px;
 }
 
-header {
+.header {
     margin: 0;
     font-size: 90px;
     color: #00008b;
@@ -292,7 +292,7 @@ header {
 }
 /* ***************** */
 
-footer {
+.footer {
     margin-top: 30px;
 }
 
