@@ -145,10 +145,6 @@ home .button-container {
     margin-right: 15px;
 }
 
-.score p {
-    margin-right: 20px; /* add 20px of space to the right of each item */
-}
-
 .link-section {
     text-align: center;
     margin-top: 45px;
