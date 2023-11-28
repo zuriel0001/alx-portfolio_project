@@ -153,7 +153,7 @@ home .button-container {
 
 /* animation name, duration, and other parameters */
 .choices img:active {
-    animation: click 1s ease-in-out;
+    animation: click 0.1s ease-in-out;
 }
 
 #computer,
