@@ -189,8 +189,8 @@ p {
 .paper,
 .scissors {
     display: inline-block;
-    width: 140px;
-    height: 140px;
+    width: 300px;
+    height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 20px;
