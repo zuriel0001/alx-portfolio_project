@@ -346,7 +346,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-  /* Reduce the font size and margin for even smaller screens */
+  /* font size and margin for even smaller screens */
   .home h1 {
     font-size: 40px;
     margin: 10px;
