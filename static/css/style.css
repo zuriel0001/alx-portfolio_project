@@ -139,7 +139,7 @@ home .button-container {
 .score {
     display: flex;
     justify-content: center;
-    text-align: center;
+    /*text-align: center;*/
     font-size: 32px;
     color: white;
     margin-top: 20px;
