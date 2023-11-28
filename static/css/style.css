@@ -129,12 +129,20 @@ home .button-container {
     margin-right: 10px;
 }
 
+.match-score {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    margin-top: 20px;
+}
 .result {
     text-align: center;
     font-size: 32px;
     color: white;
     margin-top: 20px;
 }
+
 
 .link-section {
     text-align: center;
@@ -148,7 +156,7 @@ home .button-container {
     height: 125px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0 15px; /* spaces between images on game page */
+    margin: 0 20px; /* spaces between images on game page */
 }
 
 /* animation name, duration, and other parameters */
