@@ -107,15 +107,6 @@ p {
     overflow: hidden;
 }
 
-.home .button-container {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        /*padding: 10px;*/
-}
-
 .choices {
     display: flex;
     justify-content: space-around;
@@ -141,7 +132,7 @@ p {
     height: 125px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0 5px;
+    margin: 0 2px;
 }
 
 #computer,
@@ -179,7 +170,7 @@ p {
 
 #human .button.center {
     margin-top: 60px;
-    background-color: green;
+    background-color: red;
 }
 
 .rock,
@@ -238,9 +229,9 @@ p {
 .popup {
     display: none;
     position: fixed;
-    top: 50%;
+    top: 51%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     background-color: #f1f1f1;
     padding: 20px;
     border-radius: 10px;
@@ -320,11 +311,6 @@ footer {
 
     .home .button-container {
         padding: 10px;
-        text-align: center;
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 }
 
@@ -343,4 +329,3 @@ footer {
         margin: 5px;
     }
 }
-
