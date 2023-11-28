@@ -170,7 +170,7 @@ p {
 
 #human .button.center {
     margin-top: 60px;
-    background-color: red;
+    background-color: green;
 }
 
 .rock,
@@ -229,9 +229,9 @@ p {
 .popup {
     display: none;
     position: fixed;
-    top: 51%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
     background-color: #f1f1f1;
     padding: 20px;
     border-radius: 10px;
