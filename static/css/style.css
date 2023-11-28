@@ -151,6 +151,11 @@ home .button-container {
     margin: 0 10px;
 }
 
+/* animation name, duration, and other parameters */
+.choices img:active {
+    animation: click 0.5s ease-in-out;
+}
+
 #computer,
 #human {
     display: none;
@@ -305,6 +310,7 @@ footer {
     width: 100%;
 }
 
+/* keyframes of the animation */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(-5%);
@@ -314,6 +320,22 @@ footer {
     }
 }
 
+@keyframes click {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* adjust to different screen sizes */
 @media (max-width: 768px) {
     .home h1 {
         font-size: 60px;
