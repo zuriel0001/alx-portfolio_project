@@ -138,11 +138,14 @@ home .button-container {
 
 .scores {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     font-size: 32px;
     color: white;
     margin-top: 15px;
     margin-right: 15px;
+}
+.scores p {
+    margin-right: 20px;
 }
 
 .link-section {
