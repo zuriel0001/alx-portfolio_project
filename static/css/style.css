@@ -153,7 +153,8 @@ home .button-container {
 
 /* animation name, duration, and other parameters */
 .choices img:active {
-    animation: click 0.1s ease-in-out;
+    /*animation: click 0.1s ease-in-out;*/
+    animation: rotate 0.5s;
 }
 
 #computer,
@@ -334,6 +335,16 @@ footer {
         opacity: 1;
     }
 }
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 /* adjust to different screen sizes */
 @media (max-width: 768px) {
