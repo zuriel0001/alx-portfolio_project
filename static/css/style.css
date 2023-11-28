@@ -36,8 +36,6 @@ p {
 .container {
     width: 100%;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
 }
 
 .button {
@@ -121,7 +119,7 @@ home .button-container {
 /* image position on game site */
 .choices {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 50px;
 }
 
@@ -182,7 +180,7 @@ home .button-container {
 
 #human .button.center {
     margin-top: 60px;
-    background-color: red;
+    background-color: green;
 }
 
 .rock,
