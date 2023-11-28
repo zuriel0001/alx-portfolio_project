@@ -148,12 +148,12 @@ home .button-container {
     height: 125px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0 10px;
+    margin: 0 10px; /* spaces between images on game page */
 }
 
 /* animation name, duration, and other parameters */
 .choices img:active {
-    animation: click 0.5s ease-in-out;
+    animation: click 1s ease-in-out;
 }
 
 #computer,
