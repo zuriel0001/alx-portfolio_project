@@ -130,7 +130,8 @@ home .button-container {
 }
 
 .result {
-    text-align: center;
+    justify-content: space-between;
+    /*text-align: center;*/
     font-size: 32px;
     color: white;
     margin-top: 20px;
