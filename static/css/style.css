@@ -129,14 +129,14 @@ home .button-container {
     margin-right: 10px;
 }
 
-.score {
+.result {
     text-align: center;
     font-size: 32px;
     color: white;
     margin-top: 20px;
 }
 
-.result {
+.score {
     display: flex;
     justify-content: center;
     text-align: center;
