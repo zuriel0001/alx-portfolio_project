@@ -138,7 +138,7 @@ home .button-container {
 
 .score {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     /*text-align: center;*/
     font-size: 32px;
     color: white;
