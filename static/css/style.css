@@ -224,7 +224,7 @@ p {
 }
 
 .button:first-child {
-    background-color: green;
+    background-color: blue;
 }
 
 .button:last-child {
