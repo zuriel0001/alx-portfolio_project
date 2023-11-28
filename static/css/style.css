@@ -130,11 +130,14 @@ home .button-container {
 }
 
 .result {
+    display: flex;
     justify-content: space-between;
-    /*text-align: center;*/
+    text-align: center;
     font-size: 32px;
     color: white;
     margin-top: 20px;
+}
+
 }
 
 .link-section {
