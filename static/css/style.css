@@ -136,7 +136,7 @@ home .button-container {
     margin-top: 20px;
 }
 
-.score {
+.round-score {
     display: flex;
     justify-content: center;
     font-size: 32px;
