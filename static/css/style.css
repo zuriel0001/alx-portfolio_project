@@ -148,7 +148,7 @@ home .button-container {
     height: 125px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0 2px;
+    /*margin: 0 2px;*/
 }
 
 #computer,
