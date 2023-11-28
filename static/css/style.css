@@ -129,6 +129,13 @@ home .button-container {
     margin-right: 10px;
 }
 
+.score {
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    margin-top: 20px;
+}
+
 .result {
     display: flex;
     justify-content: center;
@@ -136,8 +143,7 @@ home .button-container {
     font-size: 32px;
     color: white;
     margin-top: 20px;
-}
-
+    margin-right: 10px;
 }
 
 .link-section {
