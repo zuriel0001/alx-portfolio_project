@@ -130,11 +130,12 @@ home .button-container {
 }
 
 .matchscores {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     font-size: 32px;
     color: white;
     margin-top: 20px;
+    margin: 0 30px;
 }
 .result {
     text-align: center;
