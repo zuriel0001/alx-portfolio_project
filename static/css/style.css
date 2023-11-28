@@ -140,8 +140,8 @@ p {
 .choices img {
     cursor: pointer;
     display: inline-block;
-    width: 300px;
-    height: 300px;
+    width: 125px;
+    height: 125px;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 5px;
