@@ -138,7 +138,7 @@ home .button-container {
 
 .score {
     display: flex;
-    justify-content: space-evenly; /* create equal space between the items, but reduce the space at the edges */
+    justify-content: space-evenly;
     font-size: 32px;
     color: white;
     margin-top: 15px;
