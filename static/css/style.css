@@ -136,6 +136,14 @@ home .button-container {
     margin-top: 20px;
 }
 
+.match-score {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    margin-top: 20px;
+
 .link-section {
     text-align: center;
     margin-top: 45px;
