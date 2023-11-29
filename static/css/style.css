@@ -166,7 +166,7 @@ home .button-container {
 
 .result {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: justify;
     font-size: 32px;
     color: white;
