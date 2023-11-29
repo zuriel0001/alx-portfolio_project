@@ -149,6 +149,7 @@ home .button-container {
     margin-top: 20px;
 }
 
+/* space betwwen player scores */
 .matchscores > * {
     margin: 0 30px;
 }
@@ -157,7 +158,7 @@ home .button-container {
     text-align: center;
     font-size: 32px;
     color: white;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 
