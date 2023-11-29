@@ -372,7 +372,7 @@ footer {
 }
 
 
-/* adjust to different screen sizes
+/* adjust to different screen sizes */
 @media (max-width: 768px) {
     .home h1 {
         font-size: 60px;
@@ -404,4 +404,3 @@ footer {
         margin: 5px;
     }
 }
-*/
