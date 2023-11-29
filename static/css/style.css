@@ -14,8 +14,7 @@ main {
 }
 
 div {
-    display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     /*text-align: center; /* !important;*/*/
 }
 
