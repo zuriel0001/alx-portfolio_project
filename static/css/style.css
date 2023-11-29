@@ -42,10 +42,10 @@ p {
 }
 
 ms {
-    text-align: center;
     font-size: 20px;
     color: #000f89;
     font-family: Courier, monospace;
+    font-weight: 500;
 }
 
 .container {
