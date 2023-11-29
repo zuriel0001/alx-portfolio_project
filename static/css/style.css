@@ -50,14 +50,6 @@ ms {
     font-weight: none;
 }
 
-pr {
-    text-align: left;
-    text-align-last: center;
-    font-size: 20px;
-    color: #000f89;
-    font-family: Andale Mono, monospace;
-}
-
 .container {
     width: 100%;
     margin: 0 auto;
