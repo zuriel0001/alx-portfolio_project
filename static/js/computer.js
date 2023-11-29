@@ -23,6 +23,18 @@ function playComputerGame() {
             return;
         }
 
+        // Get the rounds played element
+        const roundsPlayedElement = document.getElementById("roundsPlayed");
+
+        // Check if the maximum rounds (5) have been played
+        if (parseInt(roundsPlayedElement.textContent) >= 5) {
+            // Display the final result for 5 seconds before ending the game
+            setTimeout(() => {
+                endGame();
+            }, 5000);
+            return;
+        }
+
         // Get the computer's choice
         const computerChoice = getRandomChoice();
 
@@ -40,7 +52,6 @@ function playComputerGame() {
         updateScores(roundResult);
 
         // Increment the rounds played counter
-        const roundsPlayedElement = document.getElementById("roundsPlayed");
         roundsPlayedElement.textContent = parseInt(roundsPlayedElement.textContent) + 1;
 
         // Check if the game has ended (e.g., after 5 rounds)
@@ -48,7 +59,7 @@ function playComputerGame() {
             // Display the final result for 5 seconds before ending the game
             setTimeout(() => {
                 endGame();
-            }, 5000);
+            }, 3000);
         }
     }
 
