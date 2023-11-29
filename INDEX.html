@@ -29,7 +29,7 @@
             <p>✔ Scissors beats Paper</p>
             <p>✔ Paper beats Rock</p>
             <!-- <p style="font-family: Arial; color: red; font-size: 20px;">You can choose to play with the computer or a colleague.</p> -->
-            <p style="font-family: Arial; color: red; font-size: 20px;">>Start Instant Game or Play With a Colleague😊</p>
+            <p style="font-family: Arial; color: red; font-size: 20px;">Start Instant Game or Play With a Colleague😊</p>
             <div class="button-container">
                 <button class="button" onclick="playWithComputer()">PLAY WITH COMPUTER</button>
                 <button class="button" onclick="playWithHuman()">PLAY WITH HUMAN</button>
@@ -39,15 +39,15 @@
 
     <!-- Computer Game Play Page -->
     <div id="computer" class="container center-button">
-        <h1>YOUR SECTION WITH THE COMPUTER</h1>
-        <p>With the rules in mind, You can make a selection by long press on the either of the 3 images </p>
+        <h2>YOUR SECTION WITH THE COMPUTER</h2>
+        <p>With the rules in mind, You can make a selection by long pressing on the either of the 3 images </p>
         <P>When you make a choice, The computer does the same at the same time and the result displayed</P>
         <div class="rounds">
-            <p>Round: <span id="roundsPlayed">0</span></p>
+            <ms>Round: <span id="roundsPlayed">0</span></ms>
         </div>
         <div class="matchscores">
-            <p>Player: <span id="playerResult">0</span></p>
-            <p>Computer: <span id="computerResult">0</span></p>
+            <ms>Player: <span id="playerResult">0</span></ms>
+            <ms>Computer: <span id="computerResult">0</span></ms>
         </div>
         <div class="choices">
             <img src="static/images/rock.png" alt="Rock" class="choice-image" onclick="playRound('rock', 'computer')">
@@ -64,7 +64,7 @@
 
     <!-- Human Game Play Partner Search Page -->
     <div id="human" class="container center-button">
-        <h1>PLAY WITH HUMAN</h1>
+        <h2>PLAY WITH HUMAN</h2>
         <p>To play with a colleague, you must share the game link with him/her.</p>
         <p>You must both load the copied link in your browsers and begin the game</p>
         <div class="link-section">
