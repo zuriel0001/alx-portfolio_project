@@ -43,9 +43,9 @@ p {
 
 ms {
     font-size: 20px;
-    color: #000f89;
+    color: #fd5800;
     font-family: Courier, monospace;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .container {
