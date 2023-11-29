@@ -14,8 +14,7 @@ main {
 }
 
 div {
-    justify-content: center;
-    /*text-align: center; /* !important;*/*/
+    text-align: justify; /* !important;*/
 }
 
 
