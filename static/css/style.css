@@ -167,7 +167,7 @@ home .button-container {
 .result {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     text-align: justify;
     font-size: 32px;
