@@ -165,7 +165,8 @@ home .button-container {
 }
 
 .result {
-    text-align: justify;
+    justify-content: space-around;
+    /*text-align: justify;*/
     font-size: 32px;
     color: white;
     margin-top: 20px;
