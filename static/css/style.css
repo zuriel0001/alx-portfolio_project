@@ -43,9 +43,9 @@ p {
 
 ms {
     font-size: 25px;
-    color: #eee600;
+    color: #008000;
     font-family: Impact, fantasy;
-    font-weight: bold;
+    font-weight: none;
 }
 
 .container {
