@@ -136,6 +136,7 @@ home .button-container {
 .matchscores {
     display: flex;
     justify-content: center;
+    font-family: Courier, monospace;
     font-size: 32px;
     color: white;
     margin-top: 20px;
