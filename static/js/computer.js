@@ -210,7 +210,21 @@ function playComputerGame() {
     window.playRound = playRound;
 }
 
-function goBack() {
+// function goBack() {
     // Hide the game pages and show the home page
-    showPage("home");
+   // showPage("home");
+//}
+
+function goBack() {
+    // Hide the game pages
+    document.getElementById("computer").style.display = "none";
+
+    // Check if the popup is visible and hide it
+    const popup = document.querySelector(".popup");
+    if (popup && window.getComputedStyle(popup).display !== "none") {
+        popup.style.display = "none";
+    }
+
+    // Show the home page
+    document.getElementById("home").style.display = "block";
 }
