@@ -45,7 +45,10 @@ function playComputerGame() {
 
         // Check if the game has ended (e.g., after 5 rounds)
         if (parseInt(roundsPlayedElement.textContent) === 5) {
-            endGame();
+            // Display final result for 2 seconds before RESET pop-up
+            setTimeout(() => {
+                endGame();
+            }, 2000);
         }
     }
 
