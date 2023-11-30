@@ -9,6 +9,12 @@ It is a simple and fun game that uses hand gestures to determine the outcome.
 - Gameplay against computer
 ![Screenshot of the game section against a computer](/assets/against_computer.PNG)
 
+- Homepage
+![Homepage](/assets/homepage.PNG)
+
+- Generating unique game link
+![gamelink](/assets/gameLink.jpeg)
+
 
 
 ## Features
