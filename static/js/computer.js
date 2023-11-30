@@ -219,9 +219,9 @@ function goBack() {
     // Hide the game pages
     document.getElementById("computer").style.display = "none";
 
-    // Check if the popup is visible and hide it
+    // Check and close the popup if it's open
     const popup = document.querySelector(".popup");
-    if (popup && window.getComputedStyle(popup).display !== "none") {
+    if (popup) {
         popup.style.display = "none";
     }
 
