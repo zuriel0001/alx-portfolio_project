@@ -1,7 +1,6 @@
-body,
-html {
+body {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     font-family: Slackey, sans-serif;
     background: #d3d3d3;
