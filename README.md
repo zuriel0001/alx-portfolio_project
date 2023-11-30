@@ -5,6 +5,8 @@ This is a web-based game that allows you to play rock paper scissors with your f
 It is a simple and fun game that uses hand gestures to determine the outcome.
 
 ## Screenshots
+
+- Gameplay against computer
 ![Screenshot of the game section against a computer](/assets/against_computer.PNG)
 
 
