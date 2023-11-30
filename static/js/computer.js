@@ -23,18 +23,6 @@ function playComputerGame() {
             return;
         }
 
-        // Get the rounds played element
-        const roundsPlayedElement = document.getElementById("roundsPlayed");
-
-        // Check if the maximum rounds (5) have been played
-        if (parseInt(roundsPlayedElement.textContent) >= 5) {
-            // Display the final result for 5 seconds before ending the game
-            setTimeout(() => {
-                endGame();
-            }, 2000);
-            return;
-        }
-
         // Get the computer's choice
         const computerChoice = getRandomChoice();
 
@@ -52,14 +40,12 @@ function playComputerGame() {
         updateScores(roundResult);
 
         // Increment the rounds played counter
+        const roundsPlayedElement = document.getElementById("roundsPlayed");
         roundsPlayedElement.textContent = parseInt(roundsPlayedElement.textContent) + 1;
 
         // Check if the game has ended (e.g., after 5 rounds)
         if (parseInt(roundsPlayedElement.textContent) === 5) {
-            // Display the final result for 5 seconds before ending the game
-            setTimeout(() => {
-                endGame();
-            }, 2000);
+            endGame();
         }
     }
 
@@ -206,20 +192,6 @@ function playComputerGame() {
 }
 
 function goBack() {
-    Hide the game pages and show the home page
-   showPage("home");
+    // Hide the game pages and show the home page
+    showPage("home");
 }
-
-//function goBack() {
-    // Hide the game pages
-    //document.getElementById("computer").style.display = "none";
-
-    // Check and close the popup if it's open
-    //const popup = document.querySelector(".popup");
-    //if (popup) {
-        //popup.style.display = "none";
-    //}
-
-    // Show the home page
-    //document.getElementById("home").style.display = "block";
-//}
