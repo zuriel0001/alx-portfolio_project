@@ -142,8 +142,9 @@ function playComputerGame() {
         displayPopup(`Game Over!\n${overallWinner}\n\nDo you want to play again?`);
 
         // Hide the popup when going back to the home page
-        document.getElementById("computer").style.display = "none";
-        document.getElementById("home").style.display = "block";
+        document.querySelector(".popup").style.display = "none";
+        // document.getElementById("computer").style.display = "none";
+        // document.getElementById("home").style.display = "block";
     }
 
     // Function to display a popup screen with the given message
