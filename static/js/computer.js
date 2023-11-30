@@ -59,7 +59,7 @@ function playComputerGame() {
             // Display the final result for 5 seconds before ending the game
             setTimeout(() => {
                 endGame();
-            }, 3000);
+            }, 2000);
         }
     }
 
