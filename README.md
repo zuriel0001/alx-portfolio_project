@@ -1,6 +1,7 @@
 # ROCK PAPER SCISSORS GAME
 
 This is a web-based game that allows you to play rock paper scissors with your friends or the computer.
+
 It is a simple and fun game that uses hand gestures to determine the outcome.
 
 ## Features
@@ -19,8 +20,20 @@ It is a simple and fun game that uses hand gestures to determine the outcome.
 - Alternatively, you can visit the live demo of the game at [this link](https://rps-zuriel0001s-projects.vercel.app/).
 - Enjoy the game and have fun!
 
-# Try it out
+## Try it out
+
 [Live Demmo](https://rps-zuriel0001s-projects.vercel.app/) 👈
 
+
 ## Prerequisites
+
 A modern browser which supports html and up to date. 💪
+
+## Authors
+
+- [Zuriel](https://github.com/zuriel0001)
+- [Chigorizima](https://github.com/chigalab1)
+
+## Contributing
+This project is still under development. Feel free to share your issues and suggestions
+
