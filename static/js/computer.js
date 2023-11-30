@@ -210,21 +210,21 @@ function playComputerGame() {
     window.playRound = playRound;
 }
 
-// function goBack() {
-    // Hide the game pages and show the home page
-   // showPage("home");
-//}
-
 function goBack() {
+    Hide the game pages and show the home page
+   showPage("home");
+}
+
+//function goBack() {
     // Hide the game pages
-    document.getElementById("computer").style.display = "none";
+    //document.getElementById("computer").style.display = "none";
 
     // Check and close the popup if it's open
-    const popup = document.querySelector(".popup");
-    if (popup) {
-        popup.style.display = "none";
-    }
+    //const popup = document.querySelector(".popup");
+    //if (popup) {
+        //popup.style.display = "none";
+    //}
 
     // Show the home page
-    document.getElementById("home").style.display = "block";
-}
+    //document.getElementById("home").style.display = "block";
+//}
