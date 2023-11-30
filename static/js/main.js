@@ -18,19 +18,21 @@ function playWithHuman() {
     //document.getElementById("home").style.display = "block";
 //}
 function goBack() {
-    // Check if coming from the human game page
-    if (document.getElementById("human").style.display === "block") {
+    const homePage = document.getElementById("home");
+    const computerPage = document.getElementById("computer");
+    const humanPage = document.getElementById("human");
+
+    if (humanPage.style.display === "block") {
         // If coming from human game page, only hide it and show the home page
-        document.getElementById("human").style.display = "none";
-        document.getElementById("home").style.display = "block";
+        humanPage.style.display = "none";
+        homePage.style.display = "block";
     } else {
         // If coming from other pages, hide all pages and show the home page
-        document.getElementById("computer").style.display = "none";
-        document.getElementById("human").style.display = "none";
-        document.getElementById("home").style.display = "block";
+        computerPage.style.display = "none";
+        humanPage.style.display = "none";
+        homePage.style.display = "block";
     }
 }
-
 
 // Function to show a specific page
 function showPage(pageId) {
