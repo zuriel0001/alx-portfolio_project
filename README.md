@@ -19,7 +19,7 @@ It is a simple and fun game that uses hand gestures to determine the outcome.
 
 ## Features
 
-- You can choose to play with the computer or a colleague.
+- You can choose to play with the computer or a friend.
 - You can see the rules of the game and the score board on the game page.
 - You can reset the game after each section so as to play again
 - You can go back to the home page anytime by clicking the "BACK TO HOME" button.
