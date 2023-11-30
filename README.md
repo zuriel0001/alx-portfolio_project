@@ -38,7 +38,7 @@ It is a simple and fun game that uses hand gestures to determine the outcome.
 
 ## Prerequisites
 
-A modern browser which supports html and up to date.
+A modern browser which supports html and up to date
 
 ## Authors
 
