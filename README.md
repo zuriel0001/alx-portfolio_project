@@ -43,7 +43,7 @@ A modern browser which supports html and up to date.
 ## Authors
 
 - Github: [Zuriel](https://github.com/zuriel0001)
-- Github: [Chigorizima](https://github.com/chigalab1)
+- Github: [Chigorizim](https://github.com/chigalab1)
 
 ## Contributing
 This project is still under development. Feel free to share your issues and suggestions
