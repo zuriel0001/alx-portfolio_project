@@ -4,6 +4,11 @@ This is a web-based game that allows you to play rock paper scissors with your f
 
 It is a simple and fun game that uses hand gestures to determine the outcome.
 
+## Screenshots
+![Screenshot of the game section against a computer](https://github.com/zuriel0001/assets/base-octocat.svg)
+
+
+
 ## Features
 
 - You can choose to play with the computer or a colleague.
@@ -11,8 +16,7 @@ It is a simple and fun game that uses hand gestures to determine the outcome.
 - You can reset the game after each section so as to play again
 - You can go back to the home page anytime by clicking the "BACK TO HOME" button.
 - To play with a colleague, you must generate a unique game link and share with them.
-- You can see the creator.
-- 
+
 ## How to Run
 
 - To run the game, you need to have a web browser that supports HTML, CSS, and JavaScript.
@@ -24,15 +28,14 @@ It is a simple and fun game that uses hand gestures to determine the outcome.
 
 [Live Demmo](https://rps-zuriel0001s-projects.vercel.app/) 👈
 
-
 ## Prerequisites
 
-A modern browser which supports html and up to date. 💪
+A modern browser which supports html and up to date.
 
 ## Authors
 
-- [Zuriel](https://github.com/zuriel0001)
-- [Chigorizima](https://github.com/chigalab1)
+- Github: [Zuriel](https://github.com/zuriel0001)
+- Github: [Chigorizima](https://github.com/chigalab1)
 
 ## Contributing
 This project is still under development. Feel free to share your issues and suggestions
