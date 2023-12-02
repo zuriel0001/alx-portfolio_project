@@ -52,10 +52,11 @@ p {
 
 .image-container {
     width: 30%;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 10px;
 }
 
 /* Set different top margins for each image */
