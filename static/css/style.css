@@ -372,16 +372,16 @@ footer {
 }
 
 
-/* adjust to different screen sizes
+/* adjust to different screen sizes */
 @media (max-width: 768px) {
     .home h1 {
-        font-size: 60px;
+        font-size: 40px;
         padding: 20px;
     }
 
     .home p {
-        font-size: 20px;
-        padding: 10px;
+        font-size: 15px;
+        padding: 5px;
     }
 
     .home .button-container {
@@ -391,41 +391,16 @@ footer {
 
 @media (max-width: 480px) {
     .home h1 {
-        font-size: 40px;
+        font-size: 30px;
         margin: 10px;
     }
 
     .home p {
-        font-size: 15px;
+        font-size: 14px;
         margin: 5px;
     }
 
     .home .button-container {
         margin: 5px;
     }
-}
-*/
-
-/* Create a flex container */
-.container {
-    isplay: flex;
-    flex-wrap: wrap; /* Allow the items to wrap to the next row */
-    justify-content: center; /* Center the items horizontally */
-    align-items: center; /* Center the items vertically */
-}
-
-/* Create a flex item for each card */
-.card {
-    width: 200px; /* Set a fixed width for the cards */
-    height: 300px; /* Set a fixed height for the cards */
-    margin: 10px; /* Add some space around the cards */
-    border: 1px solid black; /* Add a border to the cards */
-  /* Add some other styles for the cards */
-}
-
-/* Change the width of the cards for smaller screens */
-@media screen and (max-width: 480px) {
-  .card {
-      width: 150px; /* Reduce the width of the cards */
-  }
 }
