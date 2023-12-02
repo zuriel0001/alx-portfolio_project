@@ -57,6 +57,7 @@ p {
     display: flex; /*new*/
     flex-direction: column; /*new*/
     justify-content: center;
+    margin-top: 20px; /*new*/
 }
 
 .images img {
