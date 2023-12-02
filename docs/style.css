@@ -16,13 +16,18 @@ header {
     text-align: center;
 }
 
+h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 nav a {
-    margin: 0 20px;
+    margin-left: 20px;
     color: white;
     text-decoration: none;
 }
@@ -30,19 +35,32 @@ nav a {
 .container {
     text-align: center;
     position: relative;
-}
-
-h1 {
-    text-align: center;
-    font-size: 2em;
-    margin: 10px 0;
+    margin: 20px;
 }
 
 p {
     font-size: 1.2em;
 }
 
-a {
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.image-container {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.images img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.play-button {
     display: inline-block;
     margin: 20px 0;
     padding: 15px 25px;
@@ -59,30 +77,17 @@ a {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-a:hover {
+.play-button:hover {
     background-color: #3e8e4;
 }
 
-a:active {
+.play-button:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
 
-.images {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.images img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-footer {
+.footer {
     background-color: #333;
     color: white;
     text-align: center;
