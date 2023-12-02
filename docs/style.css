@@ -73,9 +73,9 @@ p {
 }
 
 .images img {
-    width: 100%;
+    width: 120%;
+    height: 120%;
     max-width: 300px;
-    height: auto;
 }
 
 
