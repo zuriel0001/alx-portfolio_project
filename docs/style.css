@@ -32,6 +32,15 @@ nav a {
     text-decoration: none;
 }
 
+.about-section {
+    display: none;
+    text-align: justify;
+}
+
+.about-section h2 {
+    font-size: 1.5em;
+}
+
 .container {
     text-align: center;
     position: relative;
