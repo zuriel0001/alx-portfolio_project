@@ -12,7 +12,7 @@
     <header>
         <h1>Rock Paper Scissors</h1>
         <nav>
-            <a href="#about-game">About the Game</a>
+            <a href="#" onclick="toggleAboutGame()">About the Game</a>
             <a href="#about-us">About Us</a>
         </nav>
     </header>
@@ -21,20 +21,28 @@
         <p>This is a classic game where players choose between rock, paper, or
             scissors, and the winner is determined based on the choices made and how the game rules apply to these choices.</p>
 
+        <div id="about-game-section" class="about-section">
+            <h2>About the Game</h2>
+            <p>This is a detailed description of the game...</p>
+            <button onclick="toggleAboutGame()">Back</button>
+        </div>
+
         <div class="images">
+            <!-- Your existing image containers and descriptions go here -->
+
             <div class="image-container">
                 <img src="assets/homepage.PNG" alt="Homepage" class="homepage">
                 <p class="description">The home page has a description of the game and how it could be played. The game rules are also on the home page as well as the options to choose which opponent to play with. Either against the computer or against a friend.</p>
             </div>
-            
+
             <div class="image-container">
                 <img src="assets/against_computer.PNG" alt="Against Computer" class="against-computer">
-                <p class="description">When you make a choice, the computer does same at the same time. Then the rules are applied and the winnter determined. The scores are updated after each round and the final winner is displayed in a popup at the end of the 5th round. You can always RESET and play again</p>
+                <p class="description">When you make a choice, the computer does the same at the same time. Then the rules are applied, and the winner is determined. The scores are updated after each round, and the final winner is displayed in a popup at the end of the 5th round. You can always RESET and play again.</p>
             </div>
 
             <div class="image-container">
                 <img src="assets/gameLink.jpeg" alt="Game Link" class="game-link">
-                <p class="description">To play with a friend, you must shaer a unique game link with them and both parties must open the link in thier browsers. To get the link, click on COPY LINK, thi command generates and copy the link at the same time.</p>
+                <p class="description">To play with a friend, you must share a unique game link with them, and both parties must open the link in their browsers. To get the link, click on COPY LINK; this command generates and copies the link at the same time.</p>
             </div>
         </div>
 
@@ -44,7 +52,13 @@
     <footer>
         <p>Made by Zuriel and Chigorizim</p>
     </footer>
+
+    <script>
+        function toggleAboutGame() {
+            var aboutGameSection = document.getElementById('about-game-section');
+            aboutGameSection.style.display = (aboutGameSection.style.display === 'none' || aboutGameSection.style.display === '') ? 'block' : 'none';
+        }
+    </script>
 </body>
 
 </html>
-
