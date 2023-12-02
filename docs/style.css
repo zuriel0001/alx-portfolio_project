@@ -1,39 +1,56 @@
-body {
-    font-family: 'Slackey', sans-serif;
+body,
+html {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Slackey, sans-serif;
+    background: #d3d3d3;
     margin: 0;
     padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    min-height: 100vh;
+}
+
+nav a {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
 }
 
 .container {
     text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
+    position: relative;
 }
 
 h1 {
-    font-size: 3rem;
-    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
     margin: 10px 0;
 }
 
 p {
-    font-size: 1.2rem;
-    color: #000f89;
-    margin-bottom: 20px;
+    font-size: 1.2em;
 }
 
 a {
     display: inline-block;
+    margin: 20px 0;
     padding: 15px 25px;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
+    outline: none;
     color: white;
     background-color: green;
     border: none;
@@ -52,33 +69,6 @@ a:active {
     transform: translateY(4px);
 }
 
-header {
-    background-color: black;
-    padding: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-.background-image {
-    width: 100%;
-    height: auto;
-}
-
 .images {
     display: flex;
     justify-content: space-around;
@@ -86,19 +76,15 @@ footer {
 }
 
 .images img {
-    width: 30%;
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
-.game-link {
-    transform: rotate(45deg);
-}
-
-.against-computer {
-    transform: scaleX(-1);
-}
-
-.homepage {
-    transform: rotate(90deg);
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
