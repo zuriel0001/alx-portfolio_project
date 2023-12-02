@@ -42,23 +42,33 @@ p {
     font-size: 1.2em;
 }
 
-.images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
+/* Define a container element for the images */
 .image-container {
-    width: 30%;
-    margin-bottom: 20px;
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow the images to wrap to the next line */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
 }
 
-.images img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+/* Define the style for each image */
+.images {
+    width: 200px; /* Set a fixed width for the images */
+    height: 200px; /* Set a fixed height for the images */
+    margin: 10px; /* Add some margin around the images */
 }
+
+/* Adjust the alignment for the first image */
+.images:first-child {
+    align-self: flex-start; /* Align the first image to the top */
+    margin-right: auto; /* Push the first image to the left */
+}
+
+/* Adjust the alignment for the last image */
+.images:last-child {
+    align-self: flex-end; /* Align the last image to the bottom */
+    margin-left: auto; /* Push the last image to the right */
+}
+
 
 .play-button {
     display: inline-block;
