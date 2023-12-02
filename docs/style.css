@@ -48,6 +48,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
+    align-content: flex-start;
 }
 
 .image-container {
