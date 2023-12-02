@@ -47,7 +47,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*margin-top: 20px;*/
+    margin-top: 20px;
 }
 
 .image-container {
@@ -73,11 +73,10 @@ p {
 }
 
 .images img {
-    width: 100%;
-    height: auto;
+    width: 120%;
+    height: 120%;
     max-width: 300px;
 }
-
 
 .play-button {
     display: inline-block;
@@ -105,17 +104,18 @@ p {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
 .description {
-    /* a well bordered box */
+    /* a well-bordered box */
     border: 3px solid black;
     border-radius: 10px;
     padding: 10px;
-    margin: 15px;
+    margin: 10px;
 
-  /* text alignment and font properties */
+    /* text alignment and font properties */
     text-align: justify;
     font-size: 16px;
-    font-family: cursive, sans-serif;
+    font-family: Arial, sans-serif;
     color: #333333;
     width: 100%;
     max-width: 300px;
@@ -130,4 +130,41 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Responsive styles for smaller screens (768px) */
+@media (max-width: 768px) {
+    .images {
+        flex-direction: column; /* Change to a column layout */
+    }
+
+    .image-container {
+        width: 80%; /* Take up 80% of the width */
+        margin: 10px auto; /* Center the image containers */
+    }
+
+    .play-button {
+        width: 80%; /* Take up 80% of the width */
+        margin: 20px auto; /* Center the button */
+    }
+
+    .description {
+        width: 80%; /* Take up 80% of the width */
+        margin: 10px auto; /* Center the description */
+    }
+}
+
+/* Responsive styles for smaller screens (480px) */
+@media (max-width: 480px) {
+    .image-container {
+        width: 90%; /* Take up 90% of the width */
+    }
+
+    .play-button {
+        width: 90%; /* Take up 90% of the width */
+    }
+
+    .description {
+        width: 90%; /* Take up 90% of the width */
+    }
 }
