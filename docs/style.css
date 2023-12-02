@@ -51,7 +51,7 @@ p {
 }
 
 .image-container {
-    width: 30%;
+    width: 100%;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -69,15 +69,14 @@ p {
 }
 
 .image-container:nth-child(3) {
-    margin-top: 40px; /* 40 pixels margin for the third image */
+    margin-top: 20px; /* 20 pixels margin for the third image */
 }
 
 .images img {
-    width: 120%;
-    height: 120%;
+    width: 100%;
+    height: auto; /* Allow the height to adjust based on the width */
     max-width: 300px;
 }
-
 
 .play-button {
     display: inline-block;
@@ -105,21 +104,19 @@ p {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
 .description {
-    /* a well bordered box */
     border: 3px solid black;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
-
-  /* text alignment and font properties */
     text-align: justify;
-    font-size: 16px;
+    font-size: 1em;
     font-family: Arial, sans-serif;
     color: #333333;
     width: 100%;
     max-width: 300px;
-    justify-content: center; /*new*/
+    justify-content: center;
 }
 
 .footer {
