@@ -48,16 +48,27 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
-    align-content: flex-start;
 }
 
 .image-container {
     width: 30%;
     margin-bottom: 20px;
-    display: flex; /*new*/
-    flex-direction: column; /*new*/
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 20px; /*new*/
+}
+
+/* Set different top margins for each image */
+.image-container:nth-child(1) {
+    margin-top: 0px; /* No margin for the first image */
+}
+
+.image-container:nth-child(2) {
+    margin-top: 20px; /* 20 pixels margin for the second image */
+}
+
+.image-container:nth-child(3) {
+    margin-top: 40px; /* 40 pixels margin for the third image */
 }
 
 .images img {
@@ -65,6 +76,7 @@ p {
     max-width: 300px;
     height: auto;
 }
+
 
 .play-button {
     display: inline-block;
