@@ -32,7 +32,7 @@ nav a {
     text-decoration: none;
 }
 
-/* ... (unchanged) ... */
+/* Existing styles... */
 
 .about-section {
     display: none;
@@ -42,19 +42,47 @@ nav a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
 }
 
 .about-section h2 {
     font-size: 1.5em;
-    color: white;
+    color: white; /* Set the text color to white */
 }
 
 .about-section p {
-    color: white;
+    color: white; /* Set the text color to white */
 }
 
-/* ... (unchanged) ... */
+.about-section button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #333; /* Dark gray background color */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px #666;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.about-section button:hover {
+    background-color: #555; /* Darker gray on hover */
+}
+
+.about-section button:active {
+    background-color: #777; /* Even darker gray on click */
+    box-shadow: 0 2px #444;
+}
+
 
 
 .container {
