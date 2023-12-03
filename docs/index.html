@@ -12,8 +12,8 @@
     <header>
         <h1>Rock Paper Scissors</h1>
         <nav>
-            <a href="#" onclick="toggleAboutSection()">About the Game</a>
-            <a href="#" onclick="toggleAboutUsSection()">About Us</a>
+            <a href="javascript:void(0);" onclick="toggleAboutSection('about-game')">About the Game</a>
+            <a href="javascript:void(0);" onclick="toggleAboutUsSection('about-us')">About Us</a>
         </nav>
     </header>
 
@@ -76,12 +76,12 @@
                 Click the "Play the Game" button to dive into the Rock Paper Scissors excitement.
                 Challenge yourself against the computer or invite a friend for a friendly duel. May the best strategist win!.</p>
 
-            <button onclick="toggleAboutSection()">Back</button>
+            <button onclick="toggleAboutSection('about-game')">Back</button>
         </div>
 
         <!-- About Us overlay section -->
         <div class="about-section" id="about-us">
-            <button onclick="toggleAboutUsSection()">Back</button>
+            <button onclick="toggleAboutUsSection('about-us')">Back</button>
             <h2>About Us</h2>
             <p>Your detailed description about your team goes here...</p>
         </div>
