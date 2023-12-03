@@ -32,14 +32,30 @@ nav a {
     text-decoration: none;
 }
 
+/* ... (unchanged) ... */
+
 .about-section {
     display: none;
     text-align: justify;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .about-section h2 {
     font-size: 1.5em;
+    color: white;
 }
+
+.about-section p {
+    color: white;
+}
+
+/* ... (unchanged) ... */
+
 
 .container {
     text-align: center;
