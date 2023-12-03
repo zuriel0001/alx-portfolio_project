@@ -55,12 +55,12 @@ nav a {
 
 .about-section p {
     color: white;
-    margin: 0 50px; /* Set the margin to a very wide value */
+    margin: 0 100px; /* Set the margin to a very wide value */
 }
 
 .about-section button {
     display: block;
-    margin-top: 20px;
+    margin: 20px auto; /* Center the button horizontally and add margin at the top */
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
@@ -75,6 +75,7 @@ nav a {
     transition: background-color 0.3s, transform 0.3s;
     width: auto; /* Set the button width to auto */
 }
+
 
 .about-section button:hover {
     background-color: #555; /* Darker gray on hover */
