@@ -151,7 +151,7 @@ p {
 }
 
 .play-button:hover {
-    background-color: #3e8e4;
+    background-color: purple;
 }
 
 .play-button:active {
@@ -185,6 +185,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 /* Responsive styles for smaller screens (768px) */
