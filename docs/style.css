@@ -55,12 +55,12 @@ nav a {
 
 .about-section p {
     color: white;
-    margin: 0 100px; /* Set the margin to a very wide value */
+    margin: 0 300px;
 }
 
 .about-section button {
     display: block;
-    margin: 20px auto; /* Center the button horizontally and add margin at the top */
+    margin: 20px auto;
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
@@ -68,7 +68,7 @@ nav a {
     text-decoration: none;
     outline: none;
     color: white;
-    background-color: #333; /* Dark gray background color */
+    background-color: green;
     border: none;
     border-radius: 5px;
     box-shadow: 0 4px #666;
@@ -107,7 +107,7 @@ p {
 
 .image-container {
     width: 30%;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
