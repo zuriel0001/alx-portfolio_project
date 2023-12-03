@@ -55,6 +55,7 @@ nav a {
 
 .about-section p {
     color: white;
+    margin: 0 20px; /* Add margin to the left and right */
 }
 
 .about-section button {
@@ -72,6 +73,8 @@ nav a {
     border-radius: 5px;
     box-shadow: 0 4px #666;
     transition: background-color 0.3s, transform 0.3s;
+    width: 50%; /* Set the button width to 50% */
+    margin: 10px auto; /* Center the button */
 }
 
 .about-section button:hover {
@@ -82,6 +85,7 @@ nav a {
     background-color: #777; /* Even darker gray on click */
     box-shadow: 0 2px #444;
 }
+
 
 .container {
     text-align: center;
