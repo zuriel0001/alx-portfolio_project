@@ -79,6 +79,7 @@ nav a {
 
 .about-section button:hover {
     background-color: purple;
+}
 
 .about-section button:active {
     background-color: purple;
