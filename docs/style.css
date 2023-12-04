@@ -78,11 +78,10 @@ nav a {
 
 
 .about-section button:hover {
-    background-color: #555; /* Darker gray on hover */
-}
+    background-color: purple;
 
 .about-section button:active {
-    background-color: #777; /* Even darker gray on click */
+    background-color: purple;
     box-shadow: 0 2px #444;
 }
 
