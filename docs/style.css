@@ -155,7 +155,7 @@ p {
 }
 
 .play-button:active {
-    background-color: #3e8e41;
+    background-color: purple;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
